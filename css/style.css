@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: rgba(115, 115, 115, 0.9);
+}
+
+.logo {
+    width: 10%;
+    margin-left: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.my-nav {
+    margin-left: 70px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+
+.dropdown-item:active {
+    background-color: #dc3545;
+}
+
+.dropdown-item:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-try {
+    margin-left: 50px;
+}
+
+.nav-link {
+    color: black;
+
+}
+
+.nav-link:hover{
+    color: #dc3545;
+}
+
+.register-now-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 110px;
+    font-family: 'Roboto Slab', serif;
+    color: darkgrey;
+}
+
+.register-now-detail {
+    font-size: 20px;
+    padding-left: 110px;
+    font-family: 'Roboto Slab', serif;
+    color: darkgrey;
+
+}
+
+.btn-register-now {
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.btn-register-now button {
+    width: 230px;
+    height: 50px;
+}
+
+.page-content {
+    background-color: #22262f;
+
+}
+
+.register-now {
+    padding-top: 36px;
+    padding-bottom: 46px;
+    background-color: #22262f;
+}
+
+.introduce-1 {
+    height: 550px;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.introduce-1-img img {
+    width: 100%;
+}
+
+.introduce-1-detail-1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+}
+
+.introduce-1-detail-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.introduce-2 {
+    background-color: #eee;
+    height: 604px;
+    padding-top: 94px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.introduce-2-img img {
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+.introduce-2-detail-1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+}
+
+.introduce-2-detail-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.box-brand-bug {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.introduce-img img {
+    width: 100%;
+}
+
+footer {
+    background: url("https://stmed.net/sites/default/files/dark-grey-wallpapers-25192-2374233.jpg");
+    padding-bottom: 30px;
+}
+
+footer:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.box-bug {
+    padding-top: 40px;
+
+}
+
+.box-bug h3 {
+    color: white;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box-bug ul {
+    list-style-type: square;
+    color: red;
+}
+
+.box-bug a {
+    text-decoration: none;
+    color: darkgrey;
+    font-family: 'Roboto ', sans-serif;
+    transition: .4s;
+}
+
+.box-bug a:hover {
+    color: whitesmoke;
+}
+
+.box-service {
+    padding-top: 40px;
+}
+
+.box-service h3 {
+    color: white;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box-service ul {
+    list-style-type: square;
+    color: red;
+}
+
+.box-service a {
+    text-decoration: none;
+    color: darkgrey;
+    font-family: 'Roboto ', sans-serif;
+    transition: .4s;
+}
+
+.box-service a:hover {
+    color: whitesmoke;
+}
+
+.box-Contact h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box-Contact {
+    padding-top: 40px;
+
+}
+
+.box-Contact a {
+    text-decoration: none;
+    color: darkgrey;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    transition: .4s;
+}
+
+.box-Contact a:hover {
+    color: whitesmoke;
+}
+
+.number {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.number a {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    border-bottom: darkgrey 1px solid;
+    border-top: darkgrey 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.box-brand img {
+    width: 100%;
+    margin-top: -10px;
+    padding-right: 10px;
+}
+
+.banner {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Satisfy', cursive;
+}
+
+.fa-facebook-square:hover {
+    color: red;
+}
+
+.fa-twitter-square:hover {
+    color: red;
+}
+
+.fa-instagram:hover {
+    color: red;
+}
+
+.modal-content{
+    background: url("https://stmed.net/sites/default/files/dark-grey-wallpapers-25192-2374233.jpg");
+}
+
+.register-logo img{
+    padding-top: -20px;
+}
+
+#btn-submit {
+    margin-left: 120px;
+}
+.member-slogan{
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.member-index{
+    font-size: 50px;
+    color: #dc3545;
+
+}
+
+.member-img{
+   margin-left: 150px;
+}
+
+.member-btn{
+    padding-bottom: 35px;
+}
+
+.member-benefit{
+    font-size: 20px;
+}
+.gallery-quote{
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.gallery-item img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.gallery-item{
+    padding-bottom: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    background-color: white;
+}
+
+.list-gallery{
+    padding-left: 150px;
+    padding-bottom: 40px;
+}
