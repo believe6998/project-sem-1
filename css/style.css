@@ -327,3 +327,26 @@ footer:after {
     padding-left: 150px;
     padding-bottom: 40px;
 }
+
+.new-img{
+    width: 100%;
+    height: 80%;
+}
+.new-img img{
+    width: 100%;
+    height: 100%;
+
+
+}
+.new-item{
+    margin-bottom: 20px;
+}
+.list-new{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.new-item a{
+    text-decoration: none;
+
+}
