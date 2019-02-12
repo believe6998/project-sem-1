@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <a class="logo" href="home.html">
+        <img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" class="" alt="">
+    </a>
+    <div class="collapse navbar-collapse my-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="home.html">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown1" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    DỊCH VỤ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="group-ex.html">THỂ DỤC NHÓM</a>
+                    <a class="dropdown-item" href="fitness.html">THỂ HÌNH</a>
+                    <a class="dropdown-item" href="swim.html">BƠI LỘI</a>
+                    <a class="dropdown-item" href="Yoga.html">YOGA</a>
+                    <a class="dropdown-item" href="kick-fit.html">KICKFIT & MMA</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    HỘI VIÊN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="membership.html">QUYỀN LỢI HỘI VIÊN</a>
+                    <a class="dropdown-item" href="gallery.html">CÂU CHUYÊN THÀNH CÔNG</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="coach.html">HUẤN LUYỆN VIÊN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="coach.html">TIN TỨC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="about-us.html">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item btn-try">
+                <button class="btn btn-outline-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    ĐĂNG KÝ TẬP THỬ
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="box-brand pl-5">
+                    <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png"
+                              alt="Brand">
+                    </div>
+                    <div class="banner">
+                        Fit For Life
+                    </div>
+                </div>
+                <button type="button" id="register-btn-show-modal" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="error">
+                    <div id="summary"></div>
+                    <form action="" name="register-form" id="register-form">
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="name" placeholder="Họ và tên">
+                        </div>
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="phone" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" name="address" cols="30" rows="5"
+                                      placeholder="Địa chỉ"></textarea>
+                        </div>
+                        <div class="form-group mt-4">
+                            <select class="form-control" name="service">
+                                <option value="">Nhập dịch vụ ban muốn tư vấn</option>
+                                <option value="1">Fitness</option>
+                                <option value="2">Thể dục nhóm</option>
+                                <option value="3">Bơi lội</option>
+                                <option value="4">Yoga</option>
+                                <option value="5">Kitfit & MMA</option>
+                            </select>
+                        </div>
+                        <div class="form-group btn-register-now">
+                            <button type="submit" class="btn btn-danger" id="btn-submit"
+                                    name="btn-submit"
+                                    value="Submit">ĐĂNG KÝ NGAY
+                            </button>
+                        </div>
+                        <div class="text-white font-weight-bold mt-4">* Chúng tôi sẽ liên hệ với bạn trong vòng 24h
+                        </div>
+                        <div class="text-white font-weight-bold mb-4">* Vui lòng đọc kỹ điều kiện sử dụng</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-content ">
+    <section>
+        <img width="100%" src="http://prod.static9.net.au/_/media/2018/08/22/09/19/ptcoach785.jpg" alt="">
+    </section>
+    <section class=" register-now">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+                <div class="text-white register-now-detail">
+                    Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+                </div>
+            </div>
+            <div class="col-4 btn-register-now">
+                <button class="btn btn-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    <div>ĐĂNG KÝ NGAY</div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-1 bg-light">
+        <div class="row">
+            <div class="col-7 pt-1-img">
+                <img src="https://elitefitness.com.vn/wp-content/uploads/2015/04/prof-kelly.png"
+                     alt="">
+            </div>
+            <div class="col-5">
+                <h1 class="introduce-1-detail-1 text-danger">
+                    KELLY ROGERS
+                </h1>
+                <div class="">
+                    Giám đốc Thể hình của Prime Fitness, ông Kelly Rogers đã làm việc trong ngành thể dục thể thao hơn
+                    20 năm. Được đào tạo ban đầu để trở thành huấn luyện viên thể thao trong quân đội Mỹ, sau đó ông đã
+                    tiếp tục công việc huấn luyện viên cá nhân và quản lý các trung tâm thể dục, cũng như các doanh
+                    nghiệp hoạt động có liên quan đến thể dục thể thao.
+
+                    Đến Việt Nam từ năm 2009, ông cam kết tiếp tục đào tạo các khách hàng của mình, cập nhật các xu
+                    hướng mới nhất của ngành thể dục thể thao và mang điều này tới các hội viên Prime Fitness.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-2">
+        <div class="row">
+            <div class="col-5">
+                <h1 class="introduce-2-detail-1 text-danger">
+                    ANNIE NGUYỄN ROGERS
+                </h1>
+                <div>
+                    Annie là giám đốc bộ môn GroupX của Prime. Annie có hơn 10 năm kinh nghiệm làm HLV quốc tế của
+                    chương trình LES MILLS với các bộ môn: BodyPump, BodyCombat, BodyJam. Annie hiện cũng là chuyên gia
+                    đào tạo cho Liên đoàn thể dục thể thao Việt Nam.
+                </div>
+            </div>
+            <div class="col-7 pt-2-img">
+                <img src="https://elitefitness.com.vn/wp-content/uploads/2015/04/prof-annie.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="introduce-1 bg-light">
+        <div class="row">
+            <div class="col-7 pt-1-img">
+                <img src="https://elitefitness.com.vn/wp-content/uploads/2015/04/prof-dancer.png"
+                     alt="">
+            </div>
+            <div class="col-5">
+                <h1 class="introduce-1-detail-1 text-danger">
+                    BELLA
+                </h1>
+                <div class="">
+                    “Hãy tin tôi, tất cả mọi người đều có thể nhảy”
+
+                    Với kinh nghiệm gần 20 năm biểu diễn, biên đạo và giảng dạy, Bella hiện đang là huấn luyện viên của
+                    GroupX tại Prime. Bella cũng là biên đạo múa cộng tác với chương trình nổi tiếng “So you think you
+                    can dance Việt Nam” và “Vũ Điệu Tuổi Xanh”.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce-2">
+        <div class="row">
+            <div class="col-5">
+                <h1 class="introduce-2-detail-1 text-danger">
+                    ABHINAV KUMAR RAJHANS
+                </h1>
+                <div>
+                    Chuyên gia về Yoga dành cho hệ tiêu hoá
+                    Được đào tạo về thiền, Pranayama, Shatkarma và Bandha Yoga
+                    Yoga để chữa bệnh và làm đẹp
+                    Cải thiện sức khoẻ của phụ nữ thông qua các kỹ thuật Yoga
+                </div>
+            </div>
+            <div class="col-7 pt-2-img">
+                <img src="https://elitefitness.com.vn/wp-content/uploads/2015/04/prof-yoga.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="introduce-1 bg-light">
+        <div class="row">
+            <div class="col-7 pt-1-img">
+                <img src="https://elitefitness.com.vn/wp-content/uploads/2015/04/prof-pt.png"
+                     alt="">
+            </div>
+            <div class="col-5">
+                <h1 class="introduce-1-detail-1 text-danger">
+                    NGUYỄN XUÂN TỨ (ALEX)
+                </h1>
+                <div class="">
+                    Tốt nghiệp: ĐH TDTT Từ Sơn – Bắc Ninh, 7 năm kinh nghiệm làm Huấn luyện viên cá nhân.
+
+                    Thế mạnh: Hiểu rõ những lợi ích mà thể dục thể thao mang lại vì vậy luôn nhiệt huyết trong việc giúp
+                    đỡ khách hàng có được 1 cơ thể khỏe mạnh, 1 vóc dáng lý tưởng
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" register-now">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+                <div class="text-white register-now-detail">
+                    Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+                </div>
+            </div>
+            <div class="col-4 btn-register-now">
+                <button class="btn btn-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    <div>ĐĂNG KÝ NGAY</div>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class=" bg-dark">
+    <div class="row">
+        <div class="col-3 box-brand-bug">
+            <div class="box-bug">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Góp ý - Phản hồi</a></li>
+                    <li><a href="#">Điều kiện sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-service col-3">
+            <h3>Dịch vụ</h3>
+            <ul>
+                <li><a href="group-ex.html">Thể dục nhóm</a></li>
+                <li><a href="fitness.html">Thể hình</a></li>
+                <li><a href="swim.html">Bơi lội</a></li>
+                <li><a href="Yoga.html">Yoga</a></li>
+                <li><a href="kick-fit.html">Kickfit & MMA</a></li>
+            </ul>
+        </div>
+        <div class="box-Contact col-3">
+            <h3>HOTLINE</h3>
+            <div class="number"><a href="#">0793245698</a></div>
+            <div class="row pl-3">
+                <a class="" href="https://www.facebook.com/nam.n.noi.3">
+                    <i class="fab fa-facebook-square fa-3x mr-2"></i>
+                </a>
+                <a class="" href="https://twitter.com/">
+                    <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
+                </a>
+                <a class="" href="https://www.instagram.com/__phnam__/">
+                    <i class="fab fa-instagram fa-3x mr-2"></i>
+                </a>
+            </div>
+        </div>
+        <div class="box-brand col-3 pr-5">
+            <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" alt="Brand">
+            </div>
+            <div class="banner">
+                Fit For Life
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../library/jquery-3.3.1.min.js"></script>
+<script src="../library/bootstrap.min.js"></script>
+</body>
+</html>
