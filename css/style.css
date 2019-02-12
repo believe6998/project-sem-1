@@ -99,7 +99,13 @@
 .introduce-1-img img {
     width: 100%;
 }
-
+.pt-1-img img{
+    width: 66%;
+}
+.pt-2-img img{
+    padding-top: 10px;
+    margin-left: 200px;
+}
 .introduce-1-detail-1 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
