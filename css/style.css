@@ -90,22 +90,14 @@
 }
 
 .introduce-1 {
-    height: 550px;
-    padding-top: 100px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 100px 80px;
+
 }
 
 .introduce-1-img img {
     width: 100%;
 }
-.pt-1-img img{
-    width: 66%;
-}
-.pt-2-img img{
-    padding-top: 10px;
-    margin-left: 200px;
-}
+
 .introduce-1-detail-1 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: bold;
@@ -119,12 +111,22 @@
 
 .introduce-2 {
     background-color: #eee;
-    height: 604px;
-    padding-top: 94px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 100px 80px 60px;
+
 }
 
+.pt-introduce-1{
+    padding-right: 90px;
+    padding-top: 70px;
+}
+
+.pt-introduce-2{
+    background-color: #eee;
+    padding-top: 70px;
+    padding-left: 50px;
+
+
+}
 .introduce-2-img img {
     width: 90%;
     padding-bottom: 30px;
@@ -138,7 +140,6 @@
 .introduce-2-detail-2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
-    margin-bottom: 10px;
 }
 
 .box-brand-bug {
@@ -148,6 +149,16 @@
 
 .introduce-img img {
     width: 100%;
+}
+
+
+.pt-1-img img{
+
+}
+
+.pt-2-img img{
+    margin-left: 150px;
+    padding-top: 10px;
 }
 
 footer {
