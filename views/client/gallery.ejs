@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <a class="logo" href="/home">
+        <img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" class="" alt="">
+    </a>
+    <div class="collapse navbar-collapse my-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="/home">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown1" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    DỊCH VỤ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/group-ex">THỂ DỤC NHÓM</a>
+                    <a class="dropdown-item" href="/fitness">THỂ HÌNH</a>
+                    <a class="dropdown-item" href="/swim">BƠI LỘI</a>
+                    <a class="dropdown-item" href="/yoga">YOGA</a>
+                    <a class="dropdown-item" href="/kick-fit">KICKFIT & MMA</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    HỘI VIÊN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/membership">QUYỀN LỢI HỘI VIÊN</a>
+                    <a class="dropdown-item" href="/gallery">CÂU CHUYÊN THÀNH CÔNG</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/news">TIN TỨC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item btn-try">
+                <button class="btn btn-outline-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    ĐĂNG KÝ TẬP THỬ
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="box-brand pl-5">
+                    <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png"
+                              alt="Brand">
+                    </div>
+                    <div class="banner">
+                        Fit For Life
+                    </div>
+                </div>
+                <button type="button" id="register-btn-show-modal" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="error">
+                    <div id="summary"></div>
+                    <form action="register/send" method="post" name="register-form" id="register-form">
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="name" placeholder="Họ và tên">
+                        </div>
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="phone" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group mt-4">
+                            <input class="form-control" type="text" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" name="address" cols="30" rows="5"
+                                      placeholder="Địa chỉ"></textarea>
+                        </div>
+                        <div class="form-group mt-4">
+                            <select class="form-control" name="service">
+                                <option value="Nhập dịch vụ ban muốn tư vấn">Nhập dịch vụ ban muốn tư vấn</option>
+                                <option value="Fitness">Fitness</option>
+                                <option value="Thể dục nhóm">Thể dục nhóm</option>
+                                <option value="Bơi lội">Bơi lội</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Kitfit & MMA">Kitfit & MMA</option>
+                            </select>
+                        </div>
+                        <div class="form-group btn-register-now">
+                            <button type="submit" class="btn btn-danger" id="btn-submit"
+                                    name="btn-submit"
+                                    value="Submit">ĐĂNG KÝ NGAY
+                            </button>
+                        </div>
+                        <div class="text-white font-weight-bold mt-4">* Chúng tôi sẽ liên hệ với bạn trong vòng 24h
+                        </div>
+                        <div class="text-white font-weight-bold mb-4">* Vui lòng đọc kỹ điều kiện sử dụng</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div>
+        <img width="100%"
+             src="https://i.ytimg.com/vi/anLa_YZK29Y/maxresdefault.jpg" alt="">
+    </div>
+    <section class=" register-now">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+                <div class="text-white register-now-detail">
+                    Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+                </div>
+            </div>
+            <div class="col-4 btn-register-now">
+                <button class="btn btn-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    <div>ĐĂNG KÝ NGAY</div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <h3 class="text-center text-danger pt-5 gallery-quote">"Tập càng đau, càng ra nhiều mồ hôi, càng thích"</h3>
+            <div class="row">
+                <div class="col-6">
+                    <iframe class="pt-5 pl-5" width="600" height="315" src="https://www.youtube.com/embed/L9GpdhoOnjM"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="col-6">
+                    <div class="pt-5 gallery-quote pr-5">
+                        <h3>HUỲNH LÊ HOA MAI</h3>
+                        <div>
+                            Bí quyết giảm ngoạn mục 9kg trong vòng 1 tháng rưỡi để vượt mặt nhiều đối thủ có tiếng trong
+                            làng thể hình giành giải 5 trong đêm chung kết Musclecontest VietNam 2018.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light mt-5">
+        <h4 class="text-center text-danger pt-4 ">Xem thêm câu chuyện của những hội viên</h4>
+        <div class="list-gallery">
+            <div class="row">
+                <div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-1.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">NGUYỄN THỊ PHÚ
+                    </h3>
+                    <div class="m-2 text-center">Bí quyết thoát cảnh “cò hương” tăng từ 47kg lên 53 kg để có thân hình chuẩn đồng hồ cát.</div>
+                </div><div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-2.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">HOÀNG CHẤN
+                    </h3>
+                    <div class="m-2 text-center">Từng tự ti vì thân hình “cây gậy”, 10x chia sẻ hành trình tăng hơn 10kg sau 3 tháng kiên trì theo đuổi #BTC21</div>
+                </div><div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-3.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">PHAN THỊ THU NGUYỆT
+                    </h3>
+                    <div class="m-2 text-center">Dáng người thon gọn, săn chắc chỉ bằng cách tập luyện thông thường. Bí quyết của người phụ nữ gần 60 tuổi chính là…</div>
+                </div><div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-4.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">DUYÊN HÀ
+                    </h3>
+                    <div class="m-2 text-center">Luôn giữ hoà khí trong gia đình và cân bằng tốt áp lực công việc, bí quyết của người phụ nữ ngoài tuổi tứ tuần này là gì?</div>
+                </div><div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-5.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">THÁI NGỌC
+                    </h3>
+                    <div class="m-2 text-center">Tạm biệt chứng khó thở và giảm 7kg chỉ sau 6 tháng tập luyện Yoga hằng ngày – chìa khoá thanh xuân của người phụ nữ hiện đại.</div>
+                </div><div class="col-3 gallery-item">
+                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-6.png"
+                         alt="">
+                    <h3 class="m-2 mt-3 text-center">NGUYỄN THI
+                    </h3>
+                    <div class="m-2 text-center">Chạy bộ chính là chìa khoá để đối mặt với áp lực công việc cao của nhân viên IT.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" register-now">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
+                <div class="text-white register-now-detail">
+                    Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
+                </div>
+            </div>
+            <div class="col-4 btn-register-now">
+                <button class="btn btn-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    <div>ĐĂNG KÝ NGAY</div>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class=" bg-dark">
+    <div class="row">
+        <div class="col-3 box-brand-bug">
+            <div class="box-bug">
+                <h3>Liên kết</h3>
+                <ul>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Góp ý - Phản hồi</a></li>
+                    <li><a href="#">Điều kiện sử dụng</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box-service col-3">
+            <h3>Dịch vụ</h3>
+            <ul>
+                <li><a href="group-ex.ejs">Thể dục nhóm</a></li>
+                <li><a href="fitness.ejs">Thể hình</a></li>
+                <li><a href="swim.ejs">Bơi lội</a></li>
+                <li><a href="yoga.ejs">Yoga</a></li>
+                <li><a href="kick-fit.ejs">Kickfit & MMA</a></li>
+            </ul>
+        </div>
+        <div class="box-Contact col-3">
+            <h3>HOTLINE</h3>
+            <div class="number"><a href="#">0793245698</a></div>
+            <div class="row pl-3">
+                <a class="" href="https://www.facebook.com/nam.n.noi.3">
+                    <i class="fab fa-facebook-square fa-3x mr-2"></i>
+                </a>
+                <a class="" href="https://twitter.com/">
+                    <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
+                </a>
+                <a class="" href="https://www.instagram.com/__phnam__/">
+                    <i class="fab fa-instagram fa-3x mr-2"></i>
+                </a>
+            </div>
+        </div>
+        <div class="box-brand col-3 pr-5">
+            <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" alt="Brand">
+            </div>
+            <div class="banner">
+                Fit For Life
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/library/jquery-3.3.1.min.js"></script>
+<script src="/library/bootstrap.min.js"></script>
+</body>
+</html>
