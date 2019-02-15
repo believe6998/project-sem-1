@@ -28,7 +28,7 @@ exports.routing = function (app) {
 
     //admin
     app.post("/register/send", userController.sendRegister);
-    app.get("/register/list", userController.listRegister);
+    app.get("/admin/register/list", userController.listRegister);
 
 
 }
