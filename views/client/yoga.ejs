@@ -41,7 +41,54 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
                    data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false"><form action="register/send" method="post" name="register-form" id="register-form">
+                   aria-haspopup="true" aria-expanded="false">
+                    HỘI VIÊN
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/membership">QUYỀN LỢI HỘI VIÊN</a>
+                    <a class="dropdown-item" href="/gallery">CÂU CHUYÊN THÀNH CÔNG</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/news">TIN TỨC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item btn-try">
+                <button class="btn btn-outline-danger " type="button" data-toggle="modal"
+                        data-target="#register-modal">
+                    ĐĂNG KÝ TẬP THỬ
+                </button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="box-brand pl-5">
+                    <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png"
+                              alt="Brand">
+                    </div>
+                    <div class="banner">
+                        Fit For Life
+                    </div>
+                </div>
+                <button type="button" id="register-btn-show-modal" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <div class="error">
+                    <div id="summary"></div>
+                    <form action="register/send" method="post" name="register-form" id="register-form">
                         <div class="form-group mt-4">
                             <input class="form-control" type="text" name="name" placeholder="Họ và tên">
                         </div>
@@ -115,7 +162,7 @@
                 </h3>
                 <div class="">
                     Luyện tập thường xuyên cùng với kỹ thuật thở trong <b>Yoga sẽ giúp bạn bạn có được một thân hình săn
-                    chắc</b>. Đây là sự lựa chọn hoàn hảo để bạn lấy lại vóc dáng thon gọn thuở thiếu thời. Yoga còn
+                        chắc</b>. Đây là sự lựa chọn hoàn hảo để bạn lấy lại vóc dáng thon gọn thuở thiếu thời. Yoga còn
                     giúp nâng cao sức khỏe và tính linh hoạt, bạn sẽ cảm nhận được cơ thể trở nên săn chắc và quyến rũ
                     hơn.
                 </div>
@@ -140,7 +187,7 @@
                 <div>
                     <p>
                         Các lớp Yoga hoàn hảo giúp giải tỏa căng thẳng: <b>Hatha, Gentle, Therapy, Stretch & Sun
-                        Series</b>
+                            Series</b>
                     </p>
                 </div>
             </div>
