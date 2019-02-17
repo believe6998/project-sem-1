@@ -14,7 +14,7 @@ exports.sendRegister = function (req, res) {
 
 exports.listRegister = function (req, res) {
     User.find({}, function (err, list) {
-        res.render("admin/user/list.ejs", {
+        res.render("admin/table/customer.ejs", {
             "listRegister": list
         });
     });
