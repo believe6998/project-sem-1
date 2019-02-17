@@ -29,8 +29,16 @@ exports.routing = function (app) {
 
     //admin
     app.get("/admin", adminController.generateAdmin);
+
+    // customer
     app.post("/register/send", userController.sendRegister);
     app.get("/admin/register/list", userController.listRegister);
+
+    //news
+    app.get("/admin/news/list", newsController.listNews);
+    app.get("/admin/news/form", newsController.generateNewsForm);
+    app.post("/admin/news/save", newsController.saveNews);
+
 
 
 }

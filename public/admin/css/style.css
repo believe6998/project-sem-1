@@ -3005,3 +3005,8 @@ ul.messagesList li span.date {
 .navbar .brand{
 	font-size: 35px;
 }
+
+.admin-news-thumbnail{
+	width: 100%;
+	height: 100%;
+}

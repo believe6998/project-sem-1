@@ -153,71 +153,18 @@
         <div class="list-new">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                            <img src="https://elitefitness.com.vn/wp-content/uploads/2019/Thang%201/5%20bi%20quyet%20giu%20gin%20suc%20khoe/Ava.jpg"
-                                 alt="">
-                            </a>
+                    <% for (var i = 0; i < listTiding.length; i++) { %>
+                        <div class="col-md-4 new-item">
+                            <div class="new-img">
+                                <a href="">
+                                    <img src="<%= listTiding[i].thumbnail %>"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="font-weight-bold pl-3"><a href=""><%= listTiding[i].content %></a></div>
+                            <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
                         </div>
-                        <div class="font-weight-bold pl-3"><a href="">5 lời khuyên giữ gìn sức khỏe trong những ngày
-                            nghỉ Tết</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
-                    <div class="col-md-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                                <img src="https://elitefitness.com.vn/wp-content/uploads/2019/Thang%201/Pilates/Pilates-Ava.jpg"
-                                     alt="">
-                            </a>
-                        </div>
-                        <div class="font-weight-bold pl-3"><a href="">Pilates - Môn học thời thường dành cho phái
-                            đẹp</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
-                    <div class="col-md-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                            <img src="http://fit24hn.com.vn/images/2018/12/28/39236ddce1e502bb5bf4_medium.jpg"
-                                 alt="">
-                            </a>
-                        </div>
-                        <div class="font-weight-bold pl-3"><a href="">HAPPY NEW YEAR 2019</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
-                    <div class="col-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                            <img src="http://fit24hn.com.vn/images/2018/12/03/e0f0efd303b0e0eeb9a1_medium.jpg"
-                                 alt="">
-                            </a>
-                        </div>
-                        <div class="font-weight-bold pl-3"><a href="">Chinh phục vóc dáng trong mơ cùng HLV "ruột" -
-                            đăng ký sớm tặng đến 45%</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
-                    <div class="col-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                            <img src="http://fit24hn.com.vn/images/2018/11/20/62375f21c99e29c0708f_medium.jpg"
-                                 alt="">
-                            </a>
-                        </div>
-                        <div class="font-weight-bold pl-3"><a href="">Ưu đãi cực khủng khi tập cùng HLV cá nhân chỉ từ
-                            299k / buổi</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
-                    <div class="col-4 new-item">
-                        <div class="new-img">
-                            <a href="">
-                            <img src="http://fit24hn.com.vn/images/2018/11/14/53f1024526d4c68a9fc5_medium.jpg"
-                                 alt="">
-                            </a>
-                        </div>
-                        <div class="font-weight-bold pl-3 "><a href="">Quà tặng trị ân đầy bất ngờ nhân ngày nhà giáo
-                            Việt Nam 20/11</a></div>
-                        <div class="font-weight-light pl-3 "><a class="text-danger" href="">Xem thêm</a></div>
-                    </div>
+                    <% } %>
                 </div>
             </div>
         </div>
