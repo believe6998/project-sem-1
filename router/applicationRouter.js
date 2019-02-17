@@ -10,6 +10,7 @@ var coachController = require("../controller/coachController.js");
 var newsController = require("../controller/newsController.js");
 var aboutUsController = require("../controller/aboutUsController.js");
 var userController = require("../controller/userController.js");
+var adminController = require("../controller/adminController.js");
 
 
 exports.routing = function (app) {
@@ -27,6 +28,7 @@ exports.routing = function (app) {
     app.get("/about-us", aboutUsController.generateAboutus);
 
     //admin
+    app.get("/admin", adminController.generateAdmin);
     app.post("/register/send", userController.sendRegister);
     app.get("/admin/register/list", userController.listRegister);
 

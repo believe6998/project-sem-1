@@ -9,7 +9,7 @@ exports.sendRegister = function (req, res) {
         service: req.body.service,
     });
     user.save();
-    res.send("Lưu thành công.");
+    res.redirect(req.get('referer'));
 };
 
 exports.listRegister = function (req, res) {
