@@ -39,6 +39,10 @@ exports.routing = function (app) {
     app.get("/admin/news/form", newsController.generateNewsForm);
     app.post("/admin/news/save", newsController.saveNews);
 
+    //gallery
+    app.get("/admin/gallery/list", galleryController.listGallery);
+    app.get("/admin/gallery/form", galleryController.generateGalleryForm);
+    app.post("/admin/gallery/save", galleryController.saveGallery);
 
 
 }

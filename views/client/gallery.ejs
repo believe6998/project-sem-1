@@ -174,43 +174,16 @@
         <h4 class="text-center text-danger pt-4 ">Xem thêm câu chuyện của những hội viên</h4>
         <div class="list-gallery">
             <div class="row">
-                <div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-1.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">NGUYỄN THỊ PHÚ
-                    </h3>
-                    <div class="m-2 text-center">Bí quyết thoát cảnh “cò hương” tăng từ 47kg lên 53 kg để có thân hình chuẩn đồng hồ cát.</div>
-                </div><div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-2.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">HOÀNG CHẤN
-                    </h3>
-                    <div class="m-2 text-center">Từng tự ti vì thân hình “cây gậy”, 10x chia sẻ hành trình tăng hơn 10kg sau 3 tháng kiên trì theo đuổi #BTC21</div>
-                </div><div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-3.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">PHAN THỊ THU NGUYỆT
-                    </h3>
-                    <div class="m-2 text-center">Dáng người thon gọn, săn chắc chỉ bằng cách tập luyện thông thường. Bí quyết của người phụ nữ gần 60 tuổi chính là…</div>
-                </div><div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-4.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">DUYÊN HÀ
-                    </h3>
-                    <div class="m-2 text-center">Luôn giữ hoà khí trong gia đình và cân bằng tốt áp lực công việc, bí quyết của người phụ nữ ngoài tuổi tứ tuần này là gì?</div>
-                </div><div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-5.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">THÁI NGỌC
-                    </h3>
-                    <div class="m-2 text-center">Tạm biệt chứng khó thở và giảm 7kg chỉ sau 6 tháng tập luyện Yoga hằng ngày – chìa khoá thanh xuân của người phụ nữ hiện đại.</div>
-                </div><div class="col-3 gallery-item">
-                    <img src="https://www.cfyc.com.vn/images_server/themes/celebration/img/member-testimonials/story-6.png"
-                         alt="">
-                    <h3 class="m-2 mt-3 text-center">NGUYỄN THI
-                    </h3>
-                    <div class="m-2 text-center">Chạy bộ chính là chìa khoá để đối mặt với áp lực công việc cao của nhân viên IT.</div>
-                </div>
+                <% for (var i = 0; i < listGallery.length; i++) { %>
+                    <div class="col-3 gallery-item">
+                        <img src="<%= listGallery[i].thumbnail %>"
+                             alt="">
+                        <h3 class="m-2 mt-3 text-center"><%= listGallery[i].name %>
+                        </h3>
+                        <div class="m-2 text-center"><%= listGallery[i].content %>
+                        </div>
+                    </div>
+                <% } %>
             </div>
         </div>
     </section>
