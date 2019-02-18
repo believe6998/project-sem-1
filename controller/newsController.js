@@ -37,8 +37,6 @@ exports.listNews = function (req, res) {
     });
 
 };
-
-
 exports.generateNews = function (req, res) {
     Tiding.find({}, function (err, list) {
         res.render("client/news.ejs", {
