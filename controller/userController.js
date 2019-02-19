@@ -1,4 +1,7 @@
 var User = require("../models/user.js");
+var mongoose = require('mongoose');
+var myid = mongoose.Types.ObjectId;
+
 
 exports.sendRegister = function (req, res) {
     var user = new User({
@@ -20,3 +23,14 @@ exports.listRegister = function (req, res) {
     });
 
 };
+
+exports.deleteRegister = function (req, res) {
+    User.findByIdAndRemove(  myid(req.params.id), function(err) {
+            if (err)
+                res.send(err);
+            else
+                res.redirect(req.get('referer'));
+    });
+
+};
+
