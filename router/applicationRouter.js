@@ -44,5 +44,10 @@ exports.routing = function (app) {
     app.get("/admin/gallery/form", galleryController.generateGalleryForm);
     app.post("/admin/gallery/save", galleryController.saveGallery);
 
+    //coachs
+    app.get("/admin/coach/list", coachController.listCoach);
+    app.get("/admin/coach/form", coachController.generateCoachForm);
+    app.post("/admin/coach/save", coachController.saveCoach);
+
 
 }
