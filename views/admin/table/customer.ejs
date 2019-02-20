@@ -131,19 +131,16 @@
                             <tbody>
                             <% for (var i = 0; i < listRegister.length; i++) { %>
                                 <tr>
-                                    <td><%= listRegister[i].name %></td>
+                                    <td tabindex="1"><%= listRegister[i].name %></td>
                                     <td><%= listRegister[i].phone %></td>
                                     <td><%= listRegister[i].email %></td>
                                     <td><%= listRegister[i].address %></td>
                                     <td><%= listRegister[i].service %></td>
                                     <td class="center">
-                                        <a class="btn btn-success" href="#">
-                                            <i class="halflings-icon white zoom-in"></i>
-                                        </a>
                                         <a class="btn btn-info" href="#">
                                             <i class="halflings-icon white edit"></i>
                                         </a>
-                                        <a class="btn btn-danger" href="#">
+                                        <a class="btn btn-danger" href="/admin/register/delete/<%= listRegister[i].id %>">
                                             <i class="halflings-icon white trash"></i>
                                         </a>
                                     </td>
@@ -190,7 +187,7 @@
 </footer>
 
 <!-- start: JavaScript-->
-
+<script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/admin/js/jquery-1.9.1.min.js"></script>
 <script src="/admin/js/jquery-migrate-1.0.0.min.js"></script>
 
@@ -245,6 +242,8 @@
 <script src="/admin/js/retina.js"></script>
 
 <script src="/admin/js/custom.js"></script>
+
+<script src="/js/editor.js"></script>
 <!-- end: JavaScript-->
 
 </body>

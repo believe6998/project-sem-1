@@ -33,6 +33,9 @@ exports.routing = function (app) {
     // customer
     app.post("/register/send", userController.sendRegister);
     app.get("/admin/register/list", userController.listRegister);
+    app.get("/admin/register/delete/:id", userController.deleteRegister);
+
+
 
     //news
     app.get("/admin/news/list", newsController.listNews);
