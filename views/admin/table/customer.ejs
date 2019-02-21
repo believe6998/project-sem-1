@@ -16,6 +16,7 @@
     <!-- end: Mobile Specific -->
 
     <!-- start: CSS -->
+    <!--<link id="bootstrap-style" href="/css/bootstrap.min.css" rel="stylesheet">-->
     <link id="bootstrap-style" href="/admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="/admin/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link id="base-style" href="/admin/css/style.css" rel="stylesheet">
@@ -105,7 +106,6 @@
 
         <!-- start: Content -->
         <div id="content" class="span10">
-
             <div class="row-fluid sortable">
                 <div class="box span12">
                     <div class="box-header" data-original-title>
@@ -118,6 +118,7 @@
                     </div>
                     <div class="box-content">
                         <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                            <input style="position: absolute; top: 140px; left: 20px; padding: 10px; text-align: start; font: 400 14px/20px Roboto, Arial, Tahoma, sans-serif; width: 299px; height: 41px; display: none; border-width: 1px 0px; border-style: solid none; border-color: rgb(238, 238, 238) rgb(85, 85, 85);">
                             <thead>
                             <tr>
                                 <th>Name</th>
@@ -137,10 +138,11 @@
                                     <td><%= listRegister[i].address %></td>
                                     <td><%= listRegister[i].service %></td>
                                     <td class="center">
-                                        <a class="btn btn-info" href="#">
+                                        <button class="btn btn-info" data-toggle="modal" data-target="#editorModal">
                                             <i class="halflings-icon white edit"></i>
-                                        </a>
-                                        <a class="btn btn-danger" href="/admin/register/delete/<%= listRegister[i].id %>">
+                                        </button>
+                                        <a class="btn btn-danger"
+                                           href="/admin/register/delete/<%= listRegister[i].id %>">
                                             <i class="halflings-icon white trash"></i>
                                         </a>
                                     </td>
@@ -156,6 +158,59 @@
         </div><!--/.fluid-container-->
 
         <!-- end: Content -->
+        <div class="modal hide fade" id="editorModal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>Settings</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="get"
+                      enctype="multipart/form-data">
+                    <fieldset>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Name</label>
+                            <div class="controls">
+                                <input type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Phone</label>
+                            <div class="controls">
+                                <input type="text" name="phone">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Email</label>
+                            <div class="controls">
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Address</label>
+                            <div class="controls">
+                               <textarea class="form-control" name="address" cols="30" rows="5">
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Dịch vụ</label>
+                            <select class="form-control" name="service">
+                                <option value="Chưa chọn dịch vụ nào">Nhập dịch vụ ban muốn tư vấn</option>
+                                <option value="Fitness">Fitness</option>
+                                <option value="Thể dục nhóm">Thể dục nhóm</option>
+                                <option value="Bơi lội">Bơi lội</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Kitfit & MMA">Kitfit & MMA</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+
+            </div>
+        </div>
     </div><!--/#content.span10-->
 </div><!--/fluid-row-->
 

@@ -34,3 +34,13 @@ exports.deleteRegister = function (req, res) {
 
 };
 
+exports.updateRegister = function (req, res) {
+    User.findByIdAndUpdate(myid(req.params.id), req.body, {new: true}, function(err)
+    {
+            if (err)
+                return res.status(500).send(err);
+            else
+                res.redirect(req.get('referer'));
+        }
+    )
+};
