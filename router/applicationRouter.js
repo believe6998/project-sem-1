@@ -33,8 +33,10 @@ exports.routing = function (app) {
     // customer
     app.post("/register/send", userController.sendRegister);
     app.get("/admin/register/list", userController.listRegister);
-    app.get("/admin/register/delete/:id", userController.deleteRegister);
-    app.get("/admin/register/update/:id", userController.updateRegister);
+
+    app.get("/admin/register/:id/delete", userController.deleteRegister);
+    app.post("/admin/register/:id/update", userController.updateRegister);
+
 
 
 
@@ -42,16 +44,22 @@ exports.routing = function (app) {
     app.get("/admin/news/list", newsController.listNews);
     app.get("/admin/news/form", newsController.generateNewsForm);
     app.post("/admin/news/save", newsController.saveNews);
+    app.get("/admin/news/:id/delete", newsController.deleteNews);
+    app.post("/admin/news/:id/update", newsController.updateNews);
 
     //gallery
     app.get("/admin/gallery/list", galleryController.listGallery);
     app.get("/admin/gallery/form", galleryController.generateGalleryForm);
     app.post("/admin/gallery/save", galleryController.saveGallery);
+    app.get("/admin/gallery/:id/delete", galleryController.deleteGallery);
+    app.post("/admin/gallery/:id/update", galleryController.updateGallery);
 
     //coachs
     app.get("/admin/coach/list", coachController.listCoach);
     app.get("/admin/coach/form", coachController.generateCoachForm);
     app.post("/admin/coach/save", coachController.saveCoach);
+    app.get("/admin/coach/:id/delete", coachController.deleteCoach);
+    app.post("/admin/coach/:id/update", coachController.updateCoach);
 
 
 }

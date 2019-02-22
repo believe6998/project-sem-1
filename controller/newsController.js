@@ -1,5 +1,8 @@
 var cloudinary = require('cloudinary').v2;
 var Tiding = require("../models/news.js");
+var mongoose = require('mongoose');
+var myid = mongoose.Types.ObjectId;
+
 
 exports.generateNewsForm = function (req, res) {
     res.render("admin/form/form-news.ejs");
@@ -46,5 +49,25 @@ exports.generateNews = function (req, res) {
 
 };
 
+exports.deleteNews = function (req, res) {
+    Tiding.findByIdAndRemove(  myid(req.params.id), function(err) {
+        if (err)
+            res.send(err);
+        else
+            res.redirect(req.get('referer'));
+    });
+
+};
+
+exports.updateNews = function (req, res) {
+    Tiding.findByIdAndUpdate(req.params.id,req.body, function(err){
+        if(err){
+            res.send(err);
+        }
+        else {
+            res.redirect(req.get('referer'));
+        }
+    });
+};
 
 

@@ -1,5 +1,8 @@
 var cloudinary = require('cloudinary').v2;
 var Coach = require("../models/coach.js");
+var mongoose = require('mongoose');
+var myid = mongoose.Types.ObjectId;
+
 
 exports.generateCoachForm = function (req, res) {
     res.render("admin/form/form-coach.ejs");
@@ -49,5 +52,24 @@ exports.generateCoach = function (req, res) {
 
 };
 
+exports.deleteCoach = function (req, res) {
+    Coach.findByIdAndRemove(  myid(req.params.id), function(err) {
+        if (err)
+            res.send(err);
+        else
+            res.redirect(req.get('referer'));
+    });
 
+};
+
+exports.updateCoach = function (req, res) {
+    Coach.findByIdAndUpdate(req.params.id,req.body, function(err){
+        if(err){
+            res.send(err);
+        }
+        else {
+            res.redirect(req.get('referer'));
+        }
+    });
+};
 
