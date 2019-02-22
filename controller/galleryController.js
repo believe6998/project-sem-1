@@ -47,5 +47,26 @@ exports.generateGallery = function (req, res) {
 
 };
 
+exports.deleteGallery= function (req, res) {
+    Gallery.findByIdAndRemove(  myid(req.params.id), function(err) {
+        if (err)
+            res.send(err);
+        else
+            res.redirect(req.get('referer'));
+    });
+
+};
+
+exports.updateGallery = function (req, res) {
+    Gallery.findByIdAndUpdate(req.params.id,req.body, function(err){
+        if(err){
+            res.send(err);
+        }
+        else {
+            res.redirect(req.get('referer'));
+        }
+    });
+};
+
 
 
