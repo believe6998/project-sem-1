@@ -150,6 +150,17 @@
                                     <td class="center">
                                         <a class="btn btn-danger"
                                            href="/admin/register/<%= listRegister[i].id %>/delete ">
+                                    <td tabindex="1"><%= listRegister[i].name %></td>
+                                    <td><%= listRegister[i].phone %></td>
+                                    <td><%= listRegister[i].email %></td>
+                                    <td><%= listRegister[i].address %></td>
+                                    <td><%= listRegister[i].service %></td>
+                                    <td class="center">
+                                        <button class="btn btn-info" data-toggle="modal" data-target="#editorModal">
+                                            <i class="halflings-icon white edit"></i>
+                                        </button>
+                                        <a class="btn btn-danger"
+                                           href="/admin/register/delete/<%= listRegister[i].id %>">
                                             <i class="halflings-icon white trash"></i>
                                         </a>
                                     </td>
@@ -192,6 +203,59 @@
         </div><!--/.fluid-container-->
 
         <!-- end: Content -->
+        <div class="modal hide fade" id="editorModal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>Settings</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="get"
+                      enctype="multipart/form-data">
+                    <fieldset>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Name</label>
+                            <div class="controls">
+                                <input type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Phone</label>
+                            <div class="controls">
+                                <input type="text" name="phone">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Email</label>
+                            <div class="controls">
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Address</label>
+                            <div class="controls">
+                               <textarea class="form-control" name="address" cols="30" rows="5">
+                            </textarea>
+                            </div>
+                        </div>
+                        <div class="control-group ">
+                            <label class="control-label" for="focusedInput">Dịch vụ</label>
+                            <select class="form-control" name="service">
+                                <option value="Chưa chọn dịch vụ nào">Nhập dịch vụ ban muốn tư vấn</option>
+                                <option value="Fitness">Fitness</option>
+                                <option value="Thể dục nhóm">Thể dục nhóm</option>
+                                <option value="Bơi lội">Bơi lội</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Kitfit & MMA">Kitfit & MMA</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+
+            </div>
+        </div>
     </div><!--/#content.span10-->
 </div><!--/fluid-row-->
 <div class="modal hide fade" id="myModal">
