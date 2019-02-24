@@ -38,15 +38,25 @@ exports.listNews = function (req, res) {
             "listTiding": list
         });
     });
-
 };
-exports.generateNews = function (req, res) {
-    Tiding.find({}, function (err, list) {
-        res.render("client/news.ejs", {
-            "listTiding": list
-        });
-    });
 
+exports.generateNews = function (req, res, next) {
+    var perPage = 6
+    var page = req.params.page || 1
+    Tiding
+        .find({})
+        .skip((perPage * page) - perPage)
+        .limit(perPage)
+        .exec(function(err, list) {
+            Tiding.count().exec(function(err, count) {
+                if (err) return next(err)
+                res.render('client/news.ejs', {
+                    "listTiding": list,
+                    current: page,
+                    pages: Math.ceil(count / perPage)
+                })
+            })
+        })
 };
 
 exports.deleteNews = function (req, res) {

@@ -53,7 +53,7 @@
                 <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="/news">TIN TỨC</a>
+                <a class="nav-link active-page" href="/news">TIN TỨC</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
@@ -166,6 +166,34 @@
                         </div>
                     <% } %>
                 </div>
+                <% if (pages > 0) { %>
+                    <ul class="pagination justify-content-center">
+                        <% if (current == 1) { %>
+                            <li class="page-item disabled"><a class="page-link">Trang đầu</a></li>
+                        <% } else { %>
+                            <li><a class="page-link" href="/news/1">First</a></li>
+                        <% } %>
+                        <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                        <% if (i !== 1) { %>
+                            <li class="page-item disabled"><a class="page-link">...</a></li>
+                        <% } %>
+                        <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                            <% if (i == current) { %>
+                                <li class="page-item active"><a class="page-link"><%= i %></a></li>
+                            <% } else { %>
+                                <li><a class="page-link" href="/news/<%= i %>"><%= i %></a></li>
+                            <% } %>
+                            <% if (i == Number(current) + 4 && i < pages) { %>
+                                <li class="page-item disabled"><a class="page-link">...</a></li>
+                            <% } %>
+                        <% } %>
+                        <% if (current == pages) { %>
+                            <li class="page-item disabled"><a class="page-link">Trang cuối</a></li>
+                        <% } else { %>
+                            <li><a class="page-link" href="/news/<%= pages %>">Trang cuối</a></li>
+                        <% } %>
+                    </ul>
+                <% } %>
             </div>
         </div>
     </section>
