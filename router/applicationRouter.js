@@ -11,6 +11,7 @@ var newsController = require("../controller/newsController.js");
 var aboutUsController = require("../controller/aboutUsController.js");
 var userController = require("../controller/userController.js");
 var adminController = require("../controller/adminController.js");
+var packageController = require("../controller/packageController.js");
 
 
 exports.routing = function (app) {
@@ -26,6 +27,7 @@ exports.routing = function (app) {
     app.get("/coach", coachController.generateCoach);
     app.get("/news/:page", newsController.generateNews);
     app.get("/about-us", aboutUsController.generateAboutus);
+    app.get("/package", packageController.generatePackage);
 
     //admin
     app.get("/admin", adminController.generateAdmin);
@@ -61,5 +63,6 @@ exports.routing = function (app) {
     app.get("/admin/coach/:id/delete", coachController.deleteCoach);
     app.post("/admin/coach/:id/update", coachController.updateCoach);
 
+    //package
 
 }
