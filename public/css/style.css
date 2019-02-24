@@ -30,7 +30,7 @@
 }
 
 .dropdown-item:active {
-    background-color: #dc3545;
+    background-color: #dc3545 ;
 }
 
 .dropdown-item:hover {
@@ -368,3 +368,11 @@ footer:after {
 
 }
 
+.active-page {
+    color: #dc3545;
+}
+
+.active-bg{
+    background-color: #dc3545;
+    color: white;
+}

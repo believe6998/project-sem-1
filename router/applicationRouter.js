@@ -24,7 +24,7 @@ exports.routing = function (app) {
     app.get("/membership", membershipController.generateMembership);
     app.get("/gallery", galleryController.generateGallery);
     app.get("/coach", coachController.generateCoach);
-    app.get("/news", newsController.generateNews);
+    app.get("/news/:page", newsController.generateNews);
     app.get("/about-us", aboutUsController.generateAboutus);
 
     //admin
