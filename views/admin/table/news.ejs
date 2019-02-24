@@ -128,14 +128,17 @@
                             </thead>
                             <tbody>
                             <% for (var i = 0; i < listTiding.length; i++) { %>
-                                <tr >
-                                    <td width="150px" height="150px" class="item-list">
+                                <tr>
+                                    <td width="150px" height="150px">
                                         <img class="admin-news-thumbnail" src="<%= listTiding[i].thumbnail %>" alt="">
                                     </td>
-                                    <td class="item-list">
+                                    <td>
                                         <%= listTiding[i].content %>
                                     </td>
-                                    <td class="center">
+                                    <td>
+                                        <a class="btn btn-info">
+                                            <i class="halflings-icon white edit"></i>
+                                        </a>
                                         <a class="btn btn-danger"
                                            href="/admin/news/<%= listTiding[i].id %>/delete ">
                                             <i class="halflings-icon white trash"></i>
@@ -144,17 +147,17 @@
                                 </tr>
                                 <tr class="hidden">
                                     <form action="/admin/news/<%= listTiding[i].id %>/update" method="post">
-                                        <td class="item-update">
+                                        <td>
                                             <input type="file" value="<%= listTiding[i].thumbnail %>" name="thumbnail">
                                         </td>
-                                        <td class="item-update">
+                                        <td>
                                             <textarea cols="30" rows="10" name="content">
                                                 <%= listTiding[i].content %>
                                             </textarea>
                                         </td>
                                         <td class="center">
-                                            <button class="btn btn-info" type="submit">
-                                                <i class="halflings-icon white edit"></i>
+                                            <button class="btn btn-success" type="submit">
+                                                <i class="fas fa-check"></i>
                                             </button>
                                             <a class="btn btn-primary">
                                                 <i class="fas fa-times"></i>

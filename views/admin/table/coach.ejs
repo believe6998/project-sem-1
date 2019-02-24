@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="box-content">
-                        <table class="table table-hover table-bordered ">
+                        <table class="table table-hover table-bordered">
                             <thead>
                             <tr>
                                 <th>Thumbnail</th>
@@ -129,16 +129,19 @@
                             <tbody>
                             <% for (var i = 0; i < listCoach.length; i++) { %>
                                 <tr>
-                                    <td width="200px" height="200px" class="item-list">
+                                    <td width="200px" height="200px">
                                         <img class="admin-news-thumbnail" src="<%= listCoach[i].thumbnail %>" alt="">
                                     </td>
-                                    <td class="item-list">
+                                    <td>
                                         <%= listCoach[i].name %>
                                     </td>
-                                    <td width="500px" class="item-list">
+                                    <td width="500px">
                                         <%= listCoach[i].content %>
                                     </td>
                                     <td class="center">
+                                        <a class="btn btn-info">
+                                            <i class="halflings-icon white edit"></i>
+                                        </a>
                                         <a class="btn btn-danger"
                                            href="/admin/coach/<%= listCoach[i].id %>/delete ">
                                             <i class="halflings-icon white trash"></i>
@@ -147,20 +150,20 @@
                                 </tr>
                                 <tr class="hidden">
                                     <form action="/admin/coach/<%= listCoach[i].id %>/update" method="post">
-                                        <td class="item-update">
+                                        <td>
                                             <input type="file" value="<%= listCoach[i].thumbnail %>" name="thumbnail">
                                         </td>
-                                        <td class="item-update">
+                                        <td>
                                             <input type="text" value=" <%= listCoach[i].name %>" name="name">
                                         </td>
-                                        <td class="item-update">
+                                        <td>
                                             <textarea cols="30" rows="10" name="content">
                                                 <%= listCoach[i].content %>
                                             </textarea>
                                         </td>
                                         <td class="center">
-                                            <button class="btn btn-info" type="submit">
-                                                <i class="halflings-icon white edit"></i>
+                                            <button class="btn btn-success" type="submit">
+                                                <i class="fas fa-check"></i>
                                             </button>
                                             <a class="btn btn-primary">
                                                 <i class="fas fa-times"></i>

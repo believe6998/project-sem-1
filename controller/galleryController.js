@@ -1,5 +1,7 @@
 var cloudinary = require('cloudinary').v2;
 var Gallery = require("../models/gallery.js");
+var mongoose = require('mongoose');
+var myid = mongoose.Types.ObjectId;
 
 exports.generateGalleryForm = function (req, res) {
     res.render("admin/form/form-gallery.ejs");
