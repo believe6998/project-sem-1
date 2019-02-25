@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery</title>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -39,21 +39,39 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active-page" href="#" id="navbarDropdown2" role="button"
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
                    data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     HỘI VIÊN
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/membership">QUYỀN LỢI HỘI VIÊN</a>
-                    <a class="dropdown-item active-bg" href="/gallery">CÂU CHUYÊN THÀNH CÔNG</a>
+                    <a class="dropdown-item" href="/gallery">CÂU CHUYÊN THÀNH CÔNG</a>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
             </li>
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link active-page" href="/package">GÓI TẬP</a>-->
+            <!--</li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="/package" id="navbarDropdown2" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    GÓI TẬP
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/package">TẤT CẢ GÓI TẬP</a>
+                    <a class="dropdown-item" href="/package/group-ex">THỂ DỤC NHÓM</a>
+                    <a class="dropdown-item" href="/package/fitness">THỂ HÌNH</a>
+                    <a class="dropdown-item" href="/package/swim">BƠI LỘI</a>
+                    <a class="dropdown-item" href="/package/yoga">YOGA</a>
+                    <a class="dropdown-item" href="/package/kick-fit">KICKFIT & MMA</a>
+                </div>
+            </li>
             <li class="nav-item">
-                <a class="nav-link " href="/news/1">TIN TỨC</a>
+                <a class="nav-link" href="/news">TIN TỨC</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
@@ -127,20 +145,21 @@
         </div>
     </div>
 </div>
-<div>
-    <div>
+<div class="page-content ">
+    <section>
         <img width="100%"
-             src="https://beinspiredchannel.com/wp-content/uploads/2017/09/5-reasons-you-might-fail.jpg" alt="">
-    </div>
+             src=""
+             alt="">
+    </section>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 d-none d-lg-block">
+            <div class="col-8 ">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-lg-4 text-sm-center btn-register-now">
+            <div class="col-4 btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -148,54 +167,65 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-light">
         <div class="container-fluid">
-            <h3 class="text-center text-danger pt-5 gallery-quote">"Tập càng đau, càng ra nhiều mồ hôi, càng thích"</h3>
+
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <iframe class="pt-5 pl-5" width="600" height="315" src="https://www.youtube.com/embed/L9GpdhoOnjM"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-6 text-sm-center">
-                    <div class="pt-5 gallery-quote pr-5">
-                        <h3>HUỲNH LÊ HOA MAI</h3>
-                        <div>
-                            Bí quyết giảm ngoạn mục 9kg trong vòng 1 tháng rưỡi để vượt mặt nhiều đối thủ có tiếng trong
-                            làng thể hình giành giải 5 trong đêm chung kết Musclecontest VietNam 2018.
+                <div class="col-9">
+                    <div class="package-title">
+                        <h3 class="text-center pt-5 pb-3 font-weight-bold text-danger">TẤT CẢ GÓI TẬP</h3>
+                    </div>
+                    <div class="list-package pt-4">
+                        <div class="row">
+                            <% for (var i = 0; i < listPackage.length; i++) { %>
+                                <div class="col-md-4">
+                                    <div class="package-item">
+                                        <div class="package-img">
+                                            <a href="">
+                                                <img src="<%= listPackage[i].thumbnail %>"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <div class="font-weight-bold text-center package-price pt-3"><%= listPackage[i].price %></div>
+                                        <div class="text-center package-name"><%= listPackage[i].name %></div>
+                                        <div class="text-center pt-3">
+                                            <button class="btn">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                Thêm vào giỏ hàng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% } %>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light mt-5">
-        <h4 class="text-center text-danger pt-4 ">Xem thêm câu chuyện của những hội viên</h4>
-        <div class="list-gallery">
-            <div class="row">
-                <% for (var i = 0; i < listGallery.length; i++) { %>
-                    <div class="col-lg-3 col-sm-9 gallery-item">
-                        <img src="<%= listGallery[i].thumbnail %>"
-                             alt="">
-                        <h3 class="m-2 mt-lg-3 mt-sm-12 text-center"><%= listGallery[i].name %>
-                        </h3>
-                        <div class="m-2 text-center"><%= listGallery[i].content %>
+                <div class="col-3">
+                    <div class="pl-4">
+                        <div class="list-category">
+                            <h3 class="font-weight-bold text-danger pb-3 pt-5">DANH MỤC</h3>
+                            <div class="category-item-list pt-4 font-weight-bolder">
+                                <div class="category-item"><a href="/package/fitness">THỂ HÌNH</a></div>
+                                <div class="pt-3 category-item"><a href="/package/group-ex">THỂ DỤC NHÓM</a></div>
+                                <div class="pt-3 category-item"><a href="/package/swim">BƠI LỘI</a></div>
+                                <div class="pt-3 category-item"><a href="/package/yoga">YOGA</a></div>
+                                <div class="pt-3 category-item"><a href="/package/kick-fit">KICKFIT & MMA</a></div>
+                            </div>
                         </div>
                     </div>
-                <% } %>
+                </div>
             </div>
         </div>
     </section>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 d-none d-lg-block">
+            <div class="col-8 ">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-lg-4 text-sm-center btn-register-now">
+            <div class="col-4 btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -205,16 +235,11 @@
     </section>
 </div>
 <footer class=" bg-dark">
-    <div class="box-brand col-lg-3 text-sm-center pr-5 d-lg-none d-sm-block">
-        <div class="banner">
-            Fit For Life
-        </div>
-    </div>
     <div class="row">
-        <div class="col-lg-3 col-sm-12 box-brand-bug">
+        <div class="col-3 box-brand-bug">
             <div class="box-bug">
-                <h3 class="text-sm-center">Liên kết</h3>
-                <ul class="col-sm-12 ">
+                <h3>Liên kết</h3>
+                <ul>
                     <li><a href="#">Tuyển dụng</a></li>
                     <li><a href="#">Góp ý - Phản hồi</a></li>
                     <li><a href="#">Điều kiện sử dụng</a></li>
@@ -222,8 +247,8 @@
                 </ul>
             </div>
         </div>
-        <div class="box-service col-lg-3 col-sm-12">
-            <h3 class="text-sm-center">Dịch vụ</h3>
+        <div class="box-service col-3">
+            <h3>Dịch vụ</h3>
             <ul>
                 <li><a href="group-ex.ejs">Thể dục nhóm</a></li>
                 <li><a href="fitness.ejs">Thể hình</a></li>
@@ -232,24 +257,22 @@
                 <li><a href="kick-fit.ejs">Kickfit & MMA</a></li>
             </ul>
         </div>
-        <div class="box-Contact col-lg-3 col-sm-12 text-sm-center">
+        <div class="box-Contact col-3">
             <h3>HOTLINE</h3>
             <div class="number"><a href="#">0793245698</a></div>
-            <div class="row">
-                <div class="pl-lg-3 col-sm-12">
-                    <a class="" href="https://www.facebook.com/nam.n.noi.3">
-                        <i class="fab fa-facebook-square fa-3x mr-2"></i>
-                    </a>
-                    <a class="" href="https://twitter.com/">
-                        <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
-                    </a>
-                    <a class="" href="https://www.instagram.com/__phnam__/">
-                        <i class="fab fa-instagram fa-3x mr-2"></i>
-                    </a>
-                </div>
+            <div class="row pl-3">
+                <a class="" href="https://www.facebook.com/nam.n.noi.3">
+                    <i class="fab fa-facebook-square fa-3x mr-2"></i>
+                </a>
+                <a class="" href="https://twitter.com/">
+                    <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
+                </a>
+                <a class="" href="https://www.instagram.com/__phnam__/">
+                    <i class="fab fa-instagram fa-3x mr-2"></i>
+                </a>
             </div>
         </div>
-        <div class="box-brand col-lg-3 d-none d-lg-block pr-5">
+        <div class="box-brand col-3 pr-5">
             <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" alt="Brand">
             </div>
             <div class="banner">
@@ -260,7 +283,5 @@
 </footer>
 <script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/library/bootstrap.min.js"></script>
-<script src="/library/jquery.validate.min.js"></script>
-<script src="/js/validate.js"></script>
 </body>
 </html>
