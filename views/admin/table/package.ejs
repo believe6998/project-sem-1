@@ -127,6 +127,7 @@
                                 <th>Thumbnail</th>
                                 <th>Price</th>
                                 <th>Name</th>
+                                <th>Category</th>
                                 <th>Action</th>
                             </tr>
                             </thead>
@@ -138,6 +139,7 @@
                                     </td>
                                     <td><div class="text-center"><%= listPackage[i].price %></div></td>
                                     <td><div class="text-center"><%= listPackage[i].name %></div></td>
+                                    <td><div class="text-center"><%= listPackage[i].category %></div></td>
                                     <td class="center">
                                         <a class="btn btn-info">
                                             <i class="halflings-icon white edit"></i>
@@ -158,6 +160,18 @@
                                         </td>
                                         <td>
                                             <input type="text" value=" <%= listPackage[i].name %>" name="name">
+                                        </td>
+                                        <td>
+                                            <label class="control-label" for="focusedInput">
+                                                <select class="controls" name="category">
+                                                    <option value="Insert category">Insert category</option>
+                                                    <option value="Fitness">Fitness</option>
+                                                    <option value="Group-Ex">Group-Ex</option>
+                                                    <option value="Swim">Swim</option>
+                                                    <option value="Yoga">Yoga</option>
+                                                    <option value="Kickfit">Kickfit</option>
+                                                </select>
+                                            </label>
                                         </td>
                                         <td class="center">
                                             <button class="btn btn-success" type="submit">

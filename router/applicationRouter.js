@@ -28,6 +28,11 @@ exports.routing = function (app) {
     app.get("/news/:page", newsController.generateNews);
     app.get("/about-us", aboutUsController.generateAboutus);
     app.get("/package", packageController.generatePackage);
+    app.get("/package/yoga", packageController.generatePackageYoga);
+    app.get("/package/swim", packageController.generatePackageSwim);
+    app.get("/package/fitness", packageController.generatePackageFitness);
+    app.get("/package/group-ex", packageController.generatePackageGroup);
+    app.get("/package/kick-fit", packageController.generatePackageKickfit);
 
     //admin
     app.get("/admin", adminController.generateAdmin);

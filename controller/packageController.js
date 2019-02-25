@@ -9,9 +9,10 @@ exports.generatePackageForm = function (req, res) {
 
 exports.savePackage = function (req, res) {
     console.log("Xử lý file.");
-    var package= new Package({
+    var package = new Package({
         price: req.body.price,
         name: req.body.name,
+        category: req.body.category,
     });
     if (req.files && req.files.thumbnail != undefined) {
         var fileGettingUploaded = req.files.thumbnail.data;
@@ -49,8 +50,51 @@ exports.generatePackage = function (req, res) {
 
 };
 
-exports.deletePackage= function (req, res) {
-    Package.findByIdAndRemove(  myid(req.params.id), function(err) {
+exports.generatePackageYoga = function (req, res) {
+    Package.find({'category': new RegExp('^' + 'Yoga' + '$', "i")}, function (err, list) {
+        res.render("client/package.ejs", {
+            "listPackage": list
+        });
+    });
+
+};
+
+exports.generatePackageSwim = function (req, res) {
+    Package.find({'category': new RegExp('^' + 'Swim' + '$', "i")}, function (err, list) {
+        res.render("client/package.ejs", {
+            "listPackage": list
+        });
+    });
+
+};
+
+exports.generatePackageFitness = function (req, res) {
+    Package.find({'category': new RegExp('^' + 'Fitness' + '$', "i")}, function (err, list) {
+        res.render("client/package.ejs", {
+            "listPackage": list
+        });
+    });
+
+};
+exports.generatePackageKickfit = function (req, res) {
+    Package.find({'category': new RegExp('^' + 'Kickfit' + '$', "i")}, function (err, list) {
+        res.render("client/package.ejs", {
+            "listPackage": list
+        });
+    });
+
+};
+exports.generatePackageGroup = function (req, res) {
+    Package.find({'category': new RegExp('^' + 'Group-Ex' + '$', "i")}, function (err, list) {
+        res.render("client/package.ejs", {
+            "listPackage": list
+        });
+    });
+
+};
+
+exports.deletePackage = function (req, res) {
+    Package.findByIdAndRemove(myid(req.params.id), function (err) {
         if (err)
             res.send(err);
         else
@@ -60,11 +104,10 @@ exports.deletePackage= function (req, res) {
 };
 
 exports.updatePackage = function (req, res) {
-    Package.findByIdAndUpdate(req.params.id,req.body, function(err){
-        if(err){
+    Package.findByIdAndUpdate(req.params.id, req.body, function (err) {
+        if (err) {
             res.send(err);
-        }
-        else {
+        } else {
             res.redirect(req.get('referer'));
         }
     });
