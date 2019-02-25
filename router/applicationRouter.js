@@ -64,5 +64,9 @@ exports.routing = function (app) {
     app.post("/admin/coach/:id/update", coachController.updateCoach);
 
     //package
-
+    app.get("/admin/package/list", packageController.listPackage);
+    app.get("/admin/package/form", packageController.generatePackageForm);
+    app.post("/admin/package/save", packageController.savePackage);
+    app.get("/admin/package/:id/delete", packageController.deletePackage);
+    app.post("/admin/package/:id/update", packageController.updatePackage);
 }

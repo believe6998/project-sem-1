@@ -381,7 +381,7 @@ footer:after {
 
 .package-img{
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 .package-img img{
     width: 100%;
@@ -390,18 +390,17 @@ footer:after {
 
 }
 .package-item{
-    margin-bottom: 2%;
-    padding: 5%;
     background: white;
+    padding: 5%;
+    margin-bottom: 7%;
 
 }
 .list-package{
-    padding: 3% 15% ;
+    margin-left: 6%;
+    border-top: 2px #dc3545 solid;
 }
 
-.list-package{
 
-}
 .package-item a{
     text-decoration: none;
 }
@@ -420,3 +419,24 @@ footer:after {
 .package-name{
     font-size: 130%;
 }
+
+.category{
+}
+
+.list-category{
+    padding-left: 14%;
+    margin-right: 15%;
+}
+
+.list-category a{
+    text-decoration: none;
+    color: black;
+}
+.list-category a:hover{
+    color: #dc3545;
+}
+
+.category-item{
+    border-top: 2px #dc3545 solid;
+}
+
