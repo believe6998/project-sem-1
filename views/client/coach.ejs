@@ -134,13 +134,13 @@
     </section>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 ">
+            <div class="col-8 d-none d-lg-block">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-4 btn-register-now">
+            <div class="col-lg-4 text-sm-center btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -153,11 +153,11 @@
     %>
         <section class="pt-introduce-1 bg-light">
             <div class="row">
-                <div class="col-6 pt-1-img ">
+                <div class="col-lg-6 col-sm-12 pt-1-img ">
                     <img src="<%= listCoach[i].thumbnail %>"
                          alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-sm-12">
                     <h1 class="introduce-1-detail-1 text-danger">
                         <%= listCoach[i].name %>
                     </h1>
@@ -173,7 +173,7 @@
         %>
             <section class="pt-introduce-2">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12">
                         <h1 class="introduce-2-detail-1 text-danger">
                             <%= listCoach[i + 1].name %>
                         </h1>
@@ -181,7 +181,7 @@
                             <%= listCoach[i + 1].content %>
                         </div>
                     </div>
-                    <div class="col-6 pt-2-img">
+                    <div class="col-lg-6 col-sm-12 pt-2-img">
                         <img src="<%= listCoach[i + 1].thumbnail %>" alt="">
                     </div>
                 </div>
@@ -193,13 +193,13 @@
     %>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 ">
+            <div class="col-8 d-none d-lg-block">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-4 btn-register-now">
+            <div class="col-lg-4 text-sm-center btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -209,11 +209,16 @@
     </section>
 </div>
 <footer class=" bg-dark">
+    <div class="box-brand col-lg-3 text-sm-center pr-5 d-lg-none d-sm-block">
+        <div class="banner">
+            Fit For Life
+        </div>
+    </div>
     <div class="row">
-        <div class="col-3 box-brand-bug">
+        <div class="col-lg-3 col-sm-12 box-brand-bug">
             <div class="box-bug">
-                <h3>Liên kết</h3>
-                <ul>
+                <h3 class="text-sm-center">Liên kết</h3>
+                <ul class="col-sm-12 ">
                     <li><a href="#">Tuyển dụng</a></li>
                     <li><a href="#">Góp ý - Phản hồi</a></li>
                     <li><a href="#">Điều kiện sử dụng</a></li>
@@ -221,8 +226,8 @@
                 </ul>
             </div>
         </div>
-        <div class="box-service col-3">
-            <h3>Dịch vụ</h3>
+        <div class="box-service col-lg-3 col-sm-12">
+            <h3 class="text-sm-center">Dịch vụ</h3>
             <ul>
                 <li><a href="group-ex.ejs">Thể dục nhóm</a></li>
                 <li><a href="fitness.ejs">Thể hình</a></li>
@@ -231,22 +236,24 @@
                 <li><a href="kick-fit.ejs">Kickfit & MMA</a></li>
             </ul>
         </div>
-        <div class="box-Contact col-3">
+        <div class="box-Contact col-lg-3 col-sm-12 text-sm-center">
             <h3>HOTLINE</h3>
             <div class="number"><a href="#">0793245698</a></div>
-            <div class="row pl-3">
-                <a class="" href="https://www.facebook.com/nam.n.noi.3">
-                    <i class="fab fa-facebook-square fa-3x mr-2"></i>
-                </a>
-                <a class="" href="https://twitter.com/">
-                    <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
-                </a>
-                <a class="" href="https://www.instagram.com/__phnam__/">
-                    <i class="fab fa-instagram fa-3x mr-2"></i>
-                </a>
+            <div class="row">
+                <div class="pl-lg-3 col-sm-12">
+                    <a class="" href="https://www.facebook.com/nam.n.noi.3">
+                        <i class="fab fa-facebook-square fa-3x mr-2"></i>
+                    </a>
+                    <a class="" href="https://twitter.com/">
+                        <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
+                    </a>
+                    <a class="" href="https://www.instagram.com/__phnam__/">
+                        <i class="fab fa-instagram fa-3x mr-2"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="box-brand col-3 pr-5">
+        <div class="box-brand col-lg-3 d-none d-lg-block pr-5">
             <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" alt="Brand">
             </div>
             <div class="banner">
