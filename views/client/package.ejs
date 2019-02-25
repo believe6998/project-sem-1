@@ -25,13 +25,13 @@
                 <a class="nav-link" href="/home">TRANG CHỦ</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active-page" href="#" id="navbarDropdown1" role="button"
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown1" role="button"
                    data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
                     DỊCH VỤ
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item active-bg" href="/group-ex">THỂ DỤC NHÓM</a>
+                    <a class="dropdown-item" href="/group-ex">THỂ DỤC NHÓM</a>
                     <a class="dropdown-item" href="/fitness">THỂ HÌNH</a>
                     <a class="dropdown-item" href="/swim">BƠI LỘI</a>
                     <a class="dropdown-item" href="/yoga">YOGA</a>
@@ -52,8 +52,26 @@
             <li class="nav-item">
                 <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
             </li>
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link active-page" href="/package">GÓI TẬP</a>-->
+            <!--</li>-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="/package" id="navbarDropdown2" role="button"
+                   data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    GÓI TẬP
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/package">TẤT CẢ GÓI TẬP</a>
+                    <a class="dropdown-item" href="/package/group-ex">THỂ DỤC NHÓM</a>
+                    <a class="dropdown-item" href="/package/fitness">THỂ HÌNH</a>
+                    <a class="dropdown-item" href="/package/swim">BƠI LỘI</a>
+                    <a class="dropdown-item" href="/package/yoga">YOGA</a>
+                    <a class="dropdown-item" href="/package/kick-fit">KICKFIT & MMA</a>
+                </div>
+            </li>
             <li class="nav-item">
-                <a class="nav-link " href="/news/1">TIN TỨC</a>
+                <a class="nav-link" href="/news">TIN TỨC</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
@@ -127,25 +145,21 @@
         </div>
     </div>
 </div>
-<div>
-    <div class="row">
-        <div class="col-12">
-            <a href="#register-modal" data-toggle="modal">
-                <img width="100%" src="/img/1.png" class="img-fluid" alt="">
-            </a>
-        </div>
-    </div>
-</div>
 <div class="page-content ">
+    <section>
+        <img width="100%"
+             src=""
+             alt="">
+    </section>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 d-none d-lg-block">
+            <div class="col-8 ">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-lg-4 text-sm-center btn-register-now">
+            <div class="col-4 btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -153,109 +167,65 @@
             </div>
         </div>
     </section>
-    <section class="introduce-1 bg-light">
-        <div class="row">
-            <div class="col-lg-7 col-sm-12 introduce-1-img">
-                <img src="/img/2.png"
-                     alt="">
-            </div>
-            <div class="col-lg-5 col-sm-12">
-                <h1 class="introduce-1-detail-1 text-danger text-sm-center">
-                    KHÔNG BỊ BUỒN CHÁN
-                </h1>
-                <h3 class="introduce-1-detail-2">
-                    Khoảng thời gian tập luyện là lúc đầu óc được thư giãn thoải mái
-                </h3>
-                <div>
-                    Vì vậy, việc đến phòng tập với nhiều người sẽ gia tăng sự hào hứng, không bị trì
-                    trệ, các buổi học không tẻ nhạt và im lặng. Đặc biệt với phụ nữ sau sinh muốn giảm cân, khi được tập
-                    nhóm với những người có cùng thể trạng sẽ giúp tạo động lực quyết tâm cao hơn. Nhiều chị em phụ nữ
-                    sau sinh, trong thời gian chăm sóc con nhỏ thường ít ra ngoài, ít gặp gỡ bạn bè và tham gia vào các
-                    hoạt động tập thể, dễ gây buồn chán, trầm cảm.
+    <section class="bg-light">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-9">
+                    <div class="package-title">
+                        <h3 class="text-center pt-5 pb-3 font-weight-bold text-danger">TẤT CẢ GÓI TẬP</h3>
+                    </div>
+                    <div class="list-package pt-4">
+                        <div class="row">
+                            <% for (var i = 0; i < listPackage.length; i++) { %>
+                                <div class="col-md-4">
+                                    <div class="package-item">
+                                        <div class="package-img">
+                                            <a href="">
+                                                <img src="<%= listPackage[i].thumbnail %>"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                        <div class="font-weight-bold text-center package-price pt-3"><%= listPackage[i].price %></div>
+                                        <div class="text-center package-name"><%= listPackage[i].name %></div>
+                                        <div class="text-center pt-3">
+                                            <button class="btn">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                Thêm vào giỏ hàng
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="introduce-2">
-        <div class="row">
-            <div class="col-lg-5 col-sm-12">
-                <h1 class="introduce-2-detail-1 text-danger text-sm-center">
-                    LƯỜI BIẾNG
-                </h1>
-                <h3 class="introduce-2-detail-2">
-                    Tập thể dục nhóm để khắc phục bệnh lười
-                </h3>
-                <div>
-                    Nếu tập một mình, bạn rất nhanh nản chí và không đề cao kỷ luật với bản thân, đi tập lúc nào cũng
-                    được,
-                    không đi tập cũng không sao. Nhưng khi tập nhóm, bạn sẽ cảm thấy có trách nhiệm hơn về sự hiện diện
-                    của
-                    mình tại lớp học, tâm lý sẽ “ngại nghỉ” hơn, và không bị oải khi nghĩ đến việc đến phòng tập một
-                    mình.
-                    Rủ bạn bè đi tập cùng cũng là động lực và “chống lười” hiệu quả.
+                <div class="col-3">
+                    <div class="pl-4">
+                        <div class="list-category">
+                            <h3 class="font-weight-bold text-danger pb-3 pt-5">DANH MỤC</h3>
+                            <div class="category-item-list pt-4 font-weight-bolder">
+                                <div class="category-item"><a href="/package/fitness">THỂ HÌNH</a></div>
+                                <div class="pt-3 category-item"><a href="/package/group-ex">THỂ DỤC NHÓM</a></div>
+                                <div class="pt-3 category-item"><a href="/package/swim">BƠI LỘI</a></div>
+                                <div class="pt-3 category-item"><a href="/package/yoga">YOGA</a></div>
+                                <div class="pt-3 category-item"><a href="/package/kick-fit">KICKFIT & MMA</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-7 col-sm-12 introduce-2-img">
-                <img src="/img/3.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="introduce-1 bg-light">
-        <div class="row">
-            <div class="col-lg-7 col-sm-12l introduce-1-img">
-                <img src="/img/4.png"
-                     alt="">
-            </div>
-            <div class="col-lg-5 col-sm-12">
-                <h1 class="introduce-1-detail-1 text-danger text-sm-center">
-                    GIẢM CÂN
-                </h1>
-                <h3 class="introduce-1-detail-2">
-                    Tập thể dục nhóm để quyết tâm giảm cân hơn
-                </h3>
-                <div class="">
-                    Khi tập luyện cùng một nhóm bạn sẽ dễ dàng nhìn thấy sự khác biệt trong kết quả tập luyện của mỗi
-                    người.
-                    Nếu bạn giảm cân chậm hơn so với bạn tập, bạn sẽ sốt ruột và quyết tâm chăm chỉ hơn. Ngoài ra, khi
-                    tập
-                    cùng nhiều người, bạn sẽ dễ dàng trao đổi thông tin về chế độ dinh dưỡng, tìm hiểu sao người này
-                    giảm
-                    cân nhanh và người kia thì không mặc dù tập luyện như nhau.
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="introduce-2">
-        <div class="row">
-            <div class="col-lg-5 col-sm-12">
-                <h1 class="introduce-2-detail-1 text-danger text-sm-center">
-                    TIẾT KIỆM
-                </h1>
-                <h3 class="introduce-2-detail-2">
-                    Tập thể dục nhóm để giảm chi phí
-                </h3>
-                <div>
-                    Đây là điều thiết thực nhất vì các lớp học nhóm luôn có chi phí mềm hơn so với các lớp học riêng cá
-                    nhân. Cùng một thời lượng tập luyện nhưng học phí được chia ra cho nhiều người hơn, đây là điều
-                    thuận
-                    lợi cho những người muốn có được lớp học chất lượng với chi phí hợp lý.
-                </div>
-            </div>
-            <div class="col-lg-7 col-sm-12 introduce-2-img">
-                <img src="https://www.nautilusplus.com/content/uploads/2012/06/exercise-group-class_iStock_000017017268Small.jpg"
-                     alt="">
             </div>
         </div>
     </section>
     <section class=" register-now">
         <div class="row">
-            <div class="col-8 d-none d-lg-block">
+            <div class="col-8 ">
                 <div class="text-white register-now-title">ĐĂNG KÝ NGAY</div>
                 <div class="text-white register-now-detail">
                     Trải nghiệm 3 ngày miễn phí toàn bộ dịch vụ
                 </div>
             </div>
-            <div class="col-lg-4 text-sm-center btn-register-now">
+            <div class="col-4 btn-register-now">
                 <button class="btn btn-danger " type="button" data-toggle="modal"
                         data-target="#register-modal">
                     <div>ĐĂNG KÝ NGAY</div>
@@ -265,16 +235,11 @@
     </section>
 </div>
 <footer class=" bg-dark">
-    <div class="box-brand col-lg-3 text-sm-center pr-5 d-lg-none d-sm-block">
-        <div class="banner">
-            Fit For Life
-        </div>
-    </div>
     <div class="row">
-        <div class="col-lg-3 col-sm-12 box-brand-bug">
+        <div class="col-3 box-brand-bug">
             <div class="box-bug">
-                <h3 class="text-sm-center">Liên kết</h3>
-                <ul class="col-sm-12 ">
+                <h3>Liên kết</h3>
+                <ul>
                     <li><a href="#">Tuyển dụng</a></li>
                     <li><a href="#">Góp ý - Phản hồi</a></li>
                     <li><a href="#">Điều kiện sử dụng</a></li>
@@ -282,8 +247,8 @@
                 </ul>
             </div>
         </div>
-        <div class="box-service col-lg-3 col-sm-12">
-            <h3 class="text-sm-center">Dịch vụ</h3>
+        <div class="box-service col-3">
+            <h3>Dịch vụ</h3>
             <ul>
                 <li><a href="group-ex.ejs">Thể dục nhóm</a></li>
                 <li><a href="fitness.ejs">Thể hình</a></li>
@@ -292,24 +257,22 @@
                 <li><a href="kick-fit.ejs">Kickfit & MMA</a></li>
             </ul>
         </div>
-        <div class="box-Contact col-lg-3 col-sm-12 text-sm-center">
+        <div class="box-Contact col-3">
             <h3>HOTLINE</h3>
             <div class="number"><a href="#">0793245698</a></div>
-            <div class="row">
-                <div class="pl-lg-3 col-sm-12">
-                    <a class="" href="https://www.facebook.com/nam.n.noi.3">
-                        <i class="fab fa-facebook-square fa-3x mr-2"></i>
-                    </a>
-                    <a class="" href="https://twitter.com/">
-                        <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
-                    </a>
-                    <a class="" href="https://www.instagram.com/__phnam__/">
-                        <i class="fab fa-instagram fa-3x mr-2"></i>
-                    </a>
-                </div>
+            <div class="row pl-3">
+                <a class="" href="https://www.facebook.com/nam.n.noi.3">
+                    <i class="fab fa-facebook-square fa-3x mr-2"></i>
+                </a>
+                <a class="" href="https://twitter.com/">
+                    <i class=" fab fa-twitter-square fa-3x mr-2 "></i>
+                </a>
+                <a class="" href="https://www.instagram.com/__phnam__/">
+                    <i class="fab fa-instagram fa-3x mr-2"></i>
+                </a>
             </div>
         </div>
-        <div class="box-brand col-lg-3 d-none d-lg-block pr-5">
+        <div class="box-brand col-3 pr-5">
             <div><img src="http://primefitnessgyms.com/wp-content/uploads/2018/03/Prime-Fitnessold.png" alt="Brand">
             </div>
             <div class="banner">
@@ -320,7 +283,5 @@
 </footer>
 <script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/library/bootstrap.min.js"></script>
-<script src="/library/jquery.validate.min.js"></script>
-<script src="/js/validate.js"></script>
 </body>
 </html>

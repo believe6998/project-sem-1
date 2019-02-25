@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf1ea0b-4bd4-4d90-a047-a240321c7d10" name="Default Changelist" comment="fix lỗi">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/client/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/about-us.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/client/coach.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/coach.ejs" afterDir="false" />
@@ -30,19 +31,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/client/gallery.ejs">
+        <entry file="file://$PROJECT_DIR$/views/client/package.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2992">
               <caret line="176" column="40" selection-start-line="176" selection-start-column="40" selection-end-line="189" selection-end-column="35" />
+
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/client/group-ex.ejs">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/customer.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2856">
               <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
+
             </state>
           </provider>
         </entry>
@@ -84,7 +87,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/client/yoga.ejs">
+        <entry file="file://$PROJECT_DIR$/views/client/package-fitness.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3485">
               <caret line="205" column="74" selection-start-line="205" selection-start-column="74" selection-end-line="205" selection-end-column="74" />
@@ -145,13 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/group-ex.html" />
-        <option value="$PROJECT_DIR$/html/gallery.html" />
-        <option value="$PROJECT_DIR$/html/about-us.html" />
-        <option value="$PROJECT_DIR$/html/news.html" />
-        <option value="$PROJECT_DIR$/html/coach.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/views/client/coach.html" />
         <option value="$PROJECT_DIR$/controller/homeController.js" />
         <option value="$PROJECT_DIR$/controller/fitnessController.js" />
         <option value="$PROJECT_DIR$/controller/groupexController.js" />
@@ -176,11 +172,8 @@
         <option value="$PROJECT_DIR$/controller/userController.js" />
         <option value="$PROJECT_DIR$/controller/galleryController.js" />
         <option value="$PROJECT_DIR$/public/js/editor.js" />
-        <option value="$PROJECT_DIR$/views/admin/table/customer.ejs" />
         <option value="$PROJECT_DIR$/views/admin/table/gallery.ejs" />
-        <option value="$PROJECT_DIR$/views/admin/table/coach.ejs" />
         <option value="$PROJECT_DIR$/views/admin/table/news.ejs" />
-        <option value="$PROJECT_DIR$/router/applicationRouter.js" />
         <option value="$PROJECT_DIR$/controller/newsController.js" />
         <option value="$PROJECT_DIR$/controller/newsController.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
@@ -189,7 +182,6 @@
         <option value="$PROJECT_DIR$/views/client/about-us.ejs" />
         <option value="$PROJECT_DIR$/views/client/coach.ejs" />
         <option value="$PROJECT_DIR$/views/client/fitness.ejs" />
-        <option value="$PROJECT_DIR$/views/client/gallery.ejs" />
         <option value="$PROJECT_DIR$/views/client/group-ex.ejs" />
         <option value="$PROJECT_DIR$/views/client/membership.ejs" />
         <option value="$PROJECT_DIR$/views/client/kick-fit.ejs" />
@@ -252,18 +244,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\admin\table" />
-      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\admin\form" />
-      <recent name="C:\Users\Nam\Desktop\project-sem-1\models" />
-      <recent name="C:\Users\Nam\Desktop\project-sem-1\controller" />
-      <recent name="C:\Users\Nam\Desktop\project-sem-1\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nam\Desktop\project-sem-1\public\js" />
       <recent name="C:\Users\Nam\Desktop\project-sem-1\views\client" />
       <recent name="C:\Users\Nam\Desktop\project-sem-1\views" />
       <recent name="C:\Users\Nam\Desktop\project-sem-1\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\client" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\admin\table" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\models" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\admin\form" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -487,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/form/form-news.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/fitnessController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -525,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/galleryController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -546,45 +524,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/table/customer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/table/news.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="147" column="49" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
+        <state relative-caret-position="2958">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/table/gallery.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/coach.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="154" column="43" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
+        <state relative-caret-position="629">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router/applicationRouter.js">
+    <entry file="file://$PROJECT_DIR$/views/client/fitness.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+        <state relative-caret-position="221">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/table/coach.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/group-ex.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="158" column="43" selection-start-line="158" selection-start-column="43" selection-end-line="158" selection-end-column="43" />
+        <state relative-caret-position="-6">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/client/membership.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/client/swim.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/client/yoga.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/yogaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/swimController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/send/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="724" column="13" selection-start-line="724" selection-start-column="13" selection-end-line="724" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/client/about-us.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2261">
+          <caret line="133" column="14" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/form/form-news.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="108" column="12" selection-start-line="108" selection-start-column="12" selection-end-line="108" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/newsController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        <state relative-caret-position="993">
+          <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -616,14 +639,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/gallery.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/package-yoga.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
           <caret line="176" column="40" selection-start-line="176" selection-start-column="40" selection-end-line="189" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/group-ex.ejs">
+    <entry file="file://$PROJECT_DIR$/views/admin/form/form-package.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2856">
           <caret line="168" column="20" selection-start-line="168" selection-start-column="20" selection-end-line="168" selection-end-column="20" />
@@ -651,14 +674,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/swim.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/package-fitness.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3298">
           <caret line="194" column="64" selection-start-line="194" selection-start-column="64" selection-end-line="194" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/yoga.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/package.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3485">
           <caret line="205" column="74" selection-start-line="205" selection-start-column="74" selection-end-line="205" selection-end-column="74" />
