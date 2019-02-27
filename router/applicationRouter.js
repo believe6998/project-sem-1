@@ -33,6 +33,7 @@ exports.routing = function (app) {
     app.get("/package/fitness", packageController.generatePackageFitness);
     app.get("/package/group-ex", packageController.generatePackageGroup);
     app.get("/package/kick-fit", packageController.generatePackageKickfit);
+    app.get("/cart", packageController.generateCart);
 
     //admin
     app.get("/admin", adminController.generateAdmin);

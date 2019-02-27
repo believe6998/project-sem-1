@@ -2,7 +2,6 @@ var cloudinary = require('cloudinary').v2;
 var Package = require("../models/package.js");
 var mongoose = require('mongoose');
 var myid = mongoose.Types.ObjectId;
-
 exports.generatePackageForm = function (req, res) {
     res.render("admin/form/form-package.ejs");
 }
@@ -112,6 +111,15 @@ exports.updatePackage = function (req, res) {
         }
     });
 };
+
+exports.generateCart = function (req, res) {
+    Package.find({}, function (err, list) {
+        res.render("client/cart.ejs", {
+            "listPackage": list
+        });
+    });
+};
+
 
 
 
