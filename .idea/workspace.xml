@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbf1ea0b-4bd4-4d90-a047-a240321c7d10" name="Default Changelist" comment="fix lỗi">
-      <change beforePath="$PROJECT_DIR$/public/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-coach.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-coach.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-gallery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-gallery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-news.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-package.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/about-us.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/about-us.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/coach.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/coach.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/fitness.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/fitness.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/gallery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/gallery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/group-ex.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/group-ex.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/kick-fit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/kick-fit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/membership.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/membership.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/news.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/packageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/packageController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/order-detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order-detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/applicationRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/applicationRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/admin/table/package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/package.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/client/cart.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/cart.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/client/package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/package.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/swim.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/swim.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/yoga.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/yoga.ejs" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/node_modules/" />
+
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -30,52 +22,82 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="project-sem-1" />
-  </component>
-  <component name="FileEditorManager">
+ <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/client/home.ejs">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/customer.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="732">
+              <caret line="216" column="10" selection-start-line="216" selection-start-column="10" selection-end-line="216" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/coach.ejs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/order.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/form/form-coach.ejs">
+        <entry file="file://$PROJECT_DIR$/controller/packageController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/form/form-gallery.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/form/form-news.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="637">
+              <caret line="176" column="28" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/admin/form/form-package.ejs">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/order.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            <state relative-caret-position="335">
+              <caret line="130" column="49" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/order-detail.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-186">
+              <caret line="96" column="95" selection-start-line="96" selection-start-column="95" selection-end-line="96" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/package.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="98" column="95" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="98" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/news.ejs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/admin/table/gallery.ejs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/router/applicationRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="79" column="73" selection-start-line="79" selection-start-column="73" selection-end-line="79" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -93,22 +115,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/client/home.ejs" />
-        <option value="$PROJECT_DIR$/views/client/about-us.ejs" />
+        <option value="$PROJECT_DIR$/controller/swimController.js" />
+        <option value="$PROJECT_DIR$/controller/yogaController.js" />
+        <option value="$PROJECT_DIR$/controller/aboutUsController.js" />
+        <option value="$PROJECT_DIR$/models/user.js" />
+        <option value="$PROJECT_DIR$/controller/adminController.js" />
+        <option value="$PROJECT_DIR$/views/admin/user/list.ejs" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/views/admin/form/news.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/table/lol.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/form/form-customer.ejs" />
+        <option value="$PROJECT_DIR$/models/news.js" />
+        <option value="$PROJECT_DIR$/views/admin/index.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/form/form-news.ejs" />
+        <option value="$PROJECT_DIR$/public/admin/css/style.css" />
+        <option value="$PROJECT_DIR$/views/admin/form/form-coach.ejs" />
+        <option value="$PROJECT_DIR$/controller/coachController.js" />
+        <option value="$PROJECT_DIR$/public/editor.js" />
+        <option value="$PROJECT_DIR$/controller/userController.js" />
+        <option value="$PROJECT_DIR$/controller/galleryController.js" />
+        <option value="$PROJECT_DIR$/public/js/editor.js" />
+        <option value="$PROJECT_DIR$/views/admin/table/gallery.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/table/news.ejs" />
+        <option value="$PROJECT_DIR$/controller/newsController.js" />
+        <option value="$PROJECT_DIR$/controller/newsController.js" />
         <option value="$PROJECT_DIR$/views/client/fitness.ejs" />
-        <option value="$PROJECT_DIR$/views/client/coach.ejs" />
-        <option value="$PROJECT_DIR$/views/client/gallery.ejs" />
         <option value="$PROJECT_DIR$/views/client/group-ex.ejs" />
-        <option value="$PROJECT_DIR$/views/client/kick-fit.ejs" />
         <option value="$PROJECT_DIR$/views/client/membership.ejs" />
-        <option value="$PROJECT_DIR$/views/client/news.ejs" />
-        <option value="$PROJECT_DIR$/views/client/package.ejs" />
         <option value="$PROJECT_DIR$/views/client/swim.ejs" />
         <option value="$PROJECT_DIR$/views/client/yoga.ejs" />
-        <option value="$PROJECT_DIR$/views/admin/form/form-coach.ejs" />
-        <option value="$PROJECT_DIR$/views/admin/form/form-gallery.ejs" />
-        <option value="$PROJECT_DIR$/views/admin/form/form-news.ejs" />
+        <option value="$PROJECT_DIR$/views/client/kick-fit.ejs" />
+        <option value="$PROJECT_DIR$/views/client/pakage.ejs" />
+        <option value="$PROJECT_DIR$/views/client/about-us.ejs" />
+        <option value="$PROJECT_DIR$/views/client/gallery.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/table/coach.ejs" />
+        <option value="$PROJECT_DIR$/views/client/package-yoga.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/table/customer.ejs" />
         <option value="$PROJECT_DIR$/views/admin/form/form-package.ejs" />
+        <option value="$PROJECT_DIR$/views/client/news.ejs" />
+        <option value="$PROJECT_DIR$/views/client/coach.ejs" />
+        <option value="$PROJECT_DIR$/views/client/home.ejs" />
+        <option value="$PROJECT_DIR$/models/package.js" />
+        <option value="$PROJECT_DIR$/models/order-detail.js" />
+        <option value="$PROJECT_DIR$/models/order.js" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/views/client/package.ejs" />
+        <option value="$PROJECT_DIR$/views/client/cart.ejs" />
+        <option value="$PROJECT_DIR$/views/admin/table/package.ejs" />
+        <option value="$PROJECT_DIR$/router/applicationRouter.js" />
+        <option value="$PROJECT_DIR$/views/admin/table/order-detail.ejs" />
+        <option value="$PROJECT_DIR$/controller/packageController.js" />
+        <option value="$PROJECT_DIR$/views/admin/table/order.ejs" />
       </list>
     </option>
   </component>
@@ -125,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,7 +192,23 @@
             <path>
               <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
@@ -163,25 +235,40 @@
             </path>
             <path>
               <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hpny" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\public\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Windows 10 Version 2\Desktop\MyProject\project-sem-1\public" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\admin\table" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\views\client" />
+      <recent name="C:\Users\Nam\Desktop\project-sem-1\models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -220,21 +307,9 @@
       <workItem from="1550767176763" duration="4171000" />
       <workItem from="1551004696273" duration="4530000" />
       <workItem from="1551013488358" duration="6514000" />
-      <workItem from="1551112243096" duration="1736000" />
-      <workItem from="1551114111206" duration="1751000" />
-      <workItem from="1551116043429" duration="1753000" />
-      <workItem from="1551117955499" duration="1766000" />
-      <workItem from="1551119796419" duration="1273000" />
-      <workItem from="1551121136636" duration="1096000" />
-      <workItem from="1551123233604" duration="1544000" />
-      <workItem from="1551125068394" duration="1932000" />
-      <workItem from="1551127491728" duration="76000" />
-      <workItem from="1551127632100" duration="830000" />
-      <workItem from="1551157281872" duration="1563000" />
-      <workItem from="1551197067573" duration="615000" />
-      <workItem from="1551203406094" duration="823000" />
-      <workItem from="1551204329544" duration="1732000" />
-      <workItem from="1551252571193" duration="1828000" />
+      <workItem from="1551118086967" duration="5634000" />
+      <workItem from="1551201101379" duration="18101000" />
+      <workItem from="1551282989771" duration="15216000" />
     </task>
     <task id="LOCAL-00001" summary="thêm link cho footer">
       <created>1549878988543</created>
@@ -295,38 +370,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4789000" />
+    <option name="totallyTimeSpent" value="39990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.29166666" />
-      <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.29166666" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.3296131" />
-      <window_info id="npm" order="3" side_tool="true" weight="0.3296131" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32733223" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19639935" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32843137" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29166666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09957851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32733223" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -334,7 +389,28 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.19639935" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.14301191" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32843137" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09957851" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.14301191" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -345,173 +421,126 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="thêm link cho footer" />
-    <MESSAGE value="sửa navbar" />
-    <MESSAGE value="sửa navbar, thêm trang tin tức và huấn luyện viên" />
-    <MESSAGE value="thêm css cho trang huấn luyện viên" />
-    <MESSAGE value="tạo trang tin tức" />
-    <MESSAGE value="sửa lại bố cục trang coach" />
-    <MESSAGE value="fix lỗi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix lỗi" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/views/client/coach.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="358" column="21" lean-forward="true" selection-start-line="358" selection-start-column="21" selection-end-line="358" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/js/jquery-1.9.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/table/news.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/coach.js">
+    <entry file="file://$PROJECT_DIR$/models/package.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="37" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/about-us.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/coach.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/fitness.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/gallery.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/group-ex.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/yoga.ejs">
+    <entry file="file://$PROJECT_DIR$/models/order-detail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/swim.ejs">
+    <entry file="file://$PROJECT_DIR$/controller/swimController.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="437" column="22" lean-forward="true" selection-start-line="437" selection-start-column="22" selection-end-line="437" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/client/package.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="734">
+          <caret line="324" column="69" lean-forward="true" selection-start-line="324" selection-start-column="7" selection-end-line="324" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/news.ejs">
+    <entry file="file://$PROJECT_DIR$/views/client/cart.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4471">
+          <caret line="293" column="46" selection-start-line="293" selection-start-column="46" selection-end-line="293" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/table/news.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/table/gallery.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/table/customer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="216" column="10" selection-start-line="216" selection-start-column="10" selection-end-line="216" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/table/coach.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/table/package.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="98" column="95" lean-forward="true" selection-start-line="95" selection-start-column="26" selection-end-line="98" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router/applicationRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="79" column="73" selection-start-line="79" selection-start-column="73" selection-end-line="79" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/order.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/membership.ejs">
+    <entry file="file://$PROJECT_DIR$/views/admin/table/order-detail.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="-186">
+          <caret line="96" column="95" selection-start-line="96" selection-start-column="95" selection-end-line="96" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/kick-fit.ejs">
+    <entry file="file://$PROJECT_DIR$/controller/packageController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="637">
+          <caret line="176" column="28" selection-start-line="176" selection-start-column="13" selection-end-line="176" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/client/home.ejs">
+    <entry file="file://$PROJECT_DIR$/views/admin/table/order.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/form/form-coach.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/form/form-gallery.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/form/form-news.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/form/form-package.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        <state relative-caret-position="335">
+          <caret line="130" column="49" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
+
         </state>
       </provider>
     </entry>

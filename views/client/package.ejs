@@ -53,7 +53,7 @@
                 <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
             </li>
             <!--<li class="nav-item">-->
-                <!--<a class="nav-link active-page" href="/package">GÓI TẬP</a>-->
+            <!--<a class="nav-link active-page" href="/package">GÓI TẬP</a>-->
             <!--</li>-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="/package" id="navbarDropdown2" role="button"
@@ -180,16 +180,16 @@
                             <% for (var i = 0; i < listPackage.length; i++) { %>
                                 <div class="col-md-4">
                                     <div class="package-item">
+                                        <div class="d-none package-id"><%= listPackage[i]._id %></div>
                                         <div class="package-img">
-                                            <a href="">
-                                                <img src="<%= listPackage[i].thumbnail %>"
-                                                     alt="">
-                                            </a>
+                                            <img src="<%= listPackage[i].thumbnail %>"
+                                                 alt="">
                                         </div>
-                                        <div class="font-weight-bold text-center package-price pt-3"><%= listPackage[i].price %></div>
+                                        <div class="font-weight-bold package-price pt-3 text-center"><%= listPackage[i].price %>
+                                        </div>
                                         <div class="text-center package-name"><%= listPackage[i].name %></div>
                                         <div class="text-center pt-3">
-                                            <button class="btn">
+                                            <button class="btn btn-add">
                                                 <i class="fas fa-shopping-cart"></i>
                                                 Thêm vào giỏ hàng
                                             </button>
@@ -283,5 +283,48 @@
 </footer>
 <script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/library/bootstrap.min.js"></script>
+<script>
+    function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 5; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    };
+    $('.btn-add').click(function () {
+        var id = $(this).parent().parent().find('.package-id').text();
+        var thumbnail = $(this).parent().parent().find('.package-img img').attr("src");
+        var price = $(this).parent().parent().find('.package-price').text();
+        var name = $(this).parent().parent().find('.package-name').text();
+        var add = {
+            'id': id,
+            'thumbnail': thumbnail,
+            'price': price,
+            'name': name,
+            'count': 1
+        }
+        var listAdded = {};
+        if (localStorage.getItem('listAdded') != null) {
+            var listAddedString = localStorage.getItem('listAdded');
+            listAdded = JSON.parse(listAddedString);
+            var currentAdd = listAdded[id];
+            if (currentAdd != null) {
+                add.count += currentAdd.count;
+            }
+        }
+        if (add.count > 0) {
+            // đưa message vào lại trong map
+            listAdded[add.id] = add;
+        } else {
+            delete listAdded[add.id];
+        }
+
+        // đưa map vào local storage.
+        localStorage.setItem('listAdded', JSON.stringify(listAdded));
+        alert("Đã thêm vào giỏ hàng!");
+    });
+</script>
 </body>
 </html>

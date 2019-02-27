@@ -33,6 +33,7 @@ exports.routing = function (app) {
     app.get("/package/fitness", packageController.generatePackageFitness);
     app.get("/package/group-ex", packageController.generatePackageGroup);
     app.get("/package/kick-fit", packageController.generatePackageKickfit);
+    app.get("/cart", packageController.generateCart);
 
     //admin
     app.get("/admin", adminController.generateAdmin);
@@ -74,4 +75,8 @@ exports.routing = function (app) {
     app.post("/admin/package/save", packageController.savePackage);
     app.get("/admin/package/:id/delete", packageController.deletePackage);
     app.post("/admin/package/:id/update", packageController.updatePackage);
+    app.post("/cart/complete", packageController.complete);
+    app.get("/admin/order/list", packageController.listOrder);
+    app.get("/admin/order-detail/list", packageController.listOrderDetail);
+
 }
