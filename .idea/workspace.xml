@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/views/client/cart.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/cart.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/client/package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/package.ejs" afterDir="false" />
     </list>
+
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,7 +22,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
+ <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/admin/table/customer.ejs">
@@ -539,6 +540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="130" column="49" selection-start-line="130" selection-start-column="49" selection-end-line="130" selection-end-column="49" />
+
         </state>
       </provider>
     </entry>
