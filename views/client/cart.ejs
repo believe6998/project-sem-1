@@ -185,12 +185,8 @@
                                 <td>Tổng</td>
                             </tr>
                             </thead>
-                            <tbody id="list-cart"></tbody>
-                            <tbody class="border-top-0">
-                            <tr>
-                                <td colspan="3">Mã giảm giá/ Quà tặng:</td>
-                                <td colspan="2">Tổng cộng:</td>
-                            </tr>
+                            <tbody id="list-cart">
+                            </tbody>
                             <tr>
                                 <td colspan="5">
                                     <div class="text-center">
@@ -277,8 +273,9 @@
         var listAddedString = localStorage.getItem('listAdded');
         var listAdded = JSON.parse(listAddedString);
         var htmlContent = '';
-        for (var key in listAdded) {
-            var total = listAdded[key].count * listAdded[key].price
+        var all;
+        for (key in listAdded) {
+            var total = listAdded[key].count * listAdded[key].price;
             htmlContent += '<tr>';
             htmlContent += '   <td width="150px" height="150px">';
             htmlContent += '       <img width="100%" height="100%" src=\'' + listAdded[key].thumbnail + '\' alt="">';
@@ -289,6 +286,9 @@
             htmlContent += '   <td class="text-center">' + total + ' VND</td>';
             htmlContent += '</tr>';
         }
+        total += total
+        htmlContent += '<td colspan="3">Mã giảm giá/ Quà tặng:</td>';
+        htmlContent += ' <td colspan="2"> ' + total + '</td>';
         $('#list-cart').html(htmlContent);
     } else {
         alert('Chưa thêm gói tập nào!');
