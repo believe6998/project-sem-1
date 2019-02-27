@@ -4,7 +4,7 @@
 
     <!-- start: Meta -->
     <meta charset="utf-8">
-    <title>QUẢN LÍ TIN TỨC</title>
+    <title>QUẢN LÍ NGƯỜI ĐÃ ĐĂNG KÍ</title>
     <link rel="icon" href="/public/favicon.png">
     <meta name="description" content="Bootstrap Metro Dashboard">
     <meta name="author" content="Dennis Ji">
@@ -17,6 +17,7 @@
     <!-- end: Mobile Specific -->
 
     <!-- start: CSS -->
+    <!--<link id="bootstrap-style" href="/css/bootstrap.min.css" rel="stylesheet">-->
     <link id="bootstrap-style" href="/admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="/admin/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link id="base-style" href="/admin/css/style.css" rel="stylesheet">
@@ -111,11 +112,10 @@
 
         <!-- start: Content -->
         <div id="content" class="span10">
-
             <div class="row-fluid sortable">
                 <div class="box span12">
                     <div class="box-header" data-original-title>
-                        <h2><i class="halflings-icon white user"></i><span class="break"></span>News</h2>
+                        <h2><i class="halflings-icon white user"></i><span class="break"></span>Customer</h2>
                         <div class="box-icon">
                             <a href="#" class="btn-setting"><i class="halflings-icon white wrench"></i></a>
                             <a href="#" class="btn-minimize"><i class="halflings-icon white chevron-up"></i></a>
@@ -126,49 +126,31 @@
                         <table class="table table-hover table-bordered">
                             <thead>
                             <tr>
-                                <th>Thumbnail</th>
-                                <th>Content</th>
-                                <th>Action</th>
+                                <th>ID</th>
+                                <th>Customer Name</th>
+                                <th>Customer Phone</th>
+                                <th>Created At</th>
+                                <th>Total Price</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <% for (var i = 0; i < listTiding.length; i++) { %>
+                            <% for (var i = 0; i < listOrder.length; i++) { %>
                                 <tr>
-                                    <td width="150px" height="150px">
-                                        <img class="admin-news-thumbnail" src="<%= listTiding[i].thumbnail %>" alt="">
+                                    <td>
+                                        <%= listOrder[i].id %>
                                     </td>
                                     <td>
-                                        <%= listTiding[i].content %>
+                                        <%= listOrder[i].customerName %>
                                     </td>
                                     <td>
-                                        <a class="btn btn-info">
-                                            <i class="halflings-icon white edit"></i>
-                                        </a>
-                                        <a class="btn btn-danger"
-                                           href="/admin/news/<%= listTiding[i].id %>/delete ">
-                                            <i class="halflings-icon white trash"></i>
-                                        </a>
+                                        <%= listOrder[i].customerPhone %>
                                     </td>
-                                </tr>
-                                <tr class="hidden">
-                                    <form action="/admin/news/<%= listTiding[i].id %>/update" method="post">
-                                        <td>
-                                            <input type="file" value="<%= listTiding[i].thumbnail %>" name="thumbnail">
-                                        </td>
-                                        <td>
-                                            <textarea cols="30" rows="10" name="content">
-                                                <%= listTiding[i].content %>
-                                            </textarea>
-                                        </td>
-                                        <td class="center">
-                                            <button class="btn btn-success" type="submit">
-                                                <i class="fas fa-check"></i>
-                                            </button>
-                                            <a class="btn btn-primary">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </td>
-                                    </form>
+                                    <td>
+                                        <%= listOrder[i].createdAt %>
+                                    </td>
+                                    <td>
+                                        <%= listOrder[i].totalPrice %>
+                                    </td>
                                 </tr>
                             <% } %>
                             </tbody>
@@ -183,7 +165,6 @@
         <!-- end: Content -->
     </div><!--/#content.span10-->
 </div><!--/fluid-row-->
-
 <div class="modal hide fade" id="myModal">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">×</button>
@@ -212,7 +193,7 @@
 </footer>
 
 <!-- start: JavaScript-->
-
+<script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/admin/js/jquery-1.9.1.min.js"></script>
 <script src="/admin/js/jquery-migrate-1.0.0.min.js"></script>
 
@@ -267,8 +248,8 @@
 <script src="/admin/js/retina.js"></script>
 
 <script src="/admin/js/custom.js"></script>
+
 <script src="/js/editor.js"></script>
 <!-- end: JavaScript-->
-
 </body>
 </html>

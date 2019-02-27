@@ -284,6 +284,15 @@
 <script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/library/bootstrap.min.js"></script>
 <script>
+    function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+        for (var i = 0; i < 5; i++)
+            text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+        return text;
+    };
     $('.btn-add').click(function () {
         var id = $(this).parent().parent().find('.package-id').text();
         var thumbnail = $(this).parent().parent().find('.package-img img').attr("src");

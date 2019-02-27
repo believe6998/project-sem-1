@@ -75,4 +75,8 @@ exports.routing = function (app) {
     app.post("/admin/package/save", packageController.savePackage);
     app.get("/admin/package/:id/delete", packageController.deletePackage);
     app.post("/admin/package/:id/update", packageController.updatePackage);
+    app.post("/cart/complete", packageController.complete);
+    app.get("/admin/order/list", packageController.listOrder);
+    app.get("/admin/order-detail/list", packageController.listOrderDetail);
+
 }

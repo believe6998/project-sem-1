@@ -175,11 +175,11 @@
                         <h3 class="text-center pt-5 pb-3 font-weight-bold text-danger">GIỎ HÀNG</h3>
                     </div>
                     <div class="pb-5">
-                        <table class="table table-bordered ">
+                        <table class="table table-bordered cart-table">
                             <thead>
                             <tr class="btn-secondary text-center">
-                                <td>Ảnh gói tập</td>
-                                <td>Tên gói tập</td>
+                                <td>Ảnh</td>
+                                <td>Tên</td>
                                 <td>Giá</td>
                                 <td>Số Lượng</td>
                                 <td>Tổng</td>
@@ -191,7 +191,7 @@
                                 <td colspan="5">
                                     <div class="text-center">
                                         <button class="btn btn-danger">Cập nhật</button>
-                                        <button class="btn btn-danger">Thanh toán</button>
+                                        <button class="btn btn-danger" type="submit" id="btn-pay">Thanh toán</button>
                                     </div>
                                 </td>
                             </tr>
@@ -273,43 +273,53 @@
         var listAddedString = localStorage.getItem('listAdded');
         var listAdded = JSON.parse(listAddedString);
         var htmlContent = '';
-        var all;
+        var all = 0;
         for (key in listAdded) {
             var total = listAdded[key].count * listAdded[key].price;
             htmlContent += '<tr>';
-            htmlContent += '   <td width="150px" height="150px">';
+            htmlContent += '   <td width="100px" height="100px">';
             htmlContent += '       <img width="100%" height="100%" src=\'' + listAdded[key].thumbnail + '\' alt="">';
             htmlContent += '   </td>';
-            htmlContent += '   <td class="text-center">' + listAdded[key].name + '</td>';
+            htmlContent += '<span class="d-none package-id">'+ listAdded[key].id +'</span>'
+            htmlContent += '   <td class="text-center ">' + listAdded[key].name + '</td>';
             htmlContent += '   <td class="text-center">' + listAdded[key].price + ' VND</td>';
-            htmlContent += '   <td class="text-center">' + listAdded[key].count + '</td>';
-            htmlContent += '   <td class="text-center">' + total + ' VND</td>';
+            htmlContent += '   <td class="text-center">';
+            htmlContent += '    <a class="mr-2 cart-add" style="text-decoration: none" href>+</a>';
+            htmlContent += '    <input class="text-center" readonly autocomplete="off" type="text" size="1" name="count" value="' + listAdded[key].count + '">';
+            htmlContent += '    <a class="ml-2 cart-minus" style="text-decoration: none" href="">-</a>';
+            htmlContent += '   </td>';
+            htmlContent += '   <td class="text-center ">' + total + ' VND</td>';
             htmlContent += '</tr>';
+            all = all + total
+            $('.cart-add').click(function () {
+            });
         }
-        total += total
         htmlContent += '<td colspan="3">Mã giảm giá/ Quà tặng:</td>';
-        htmlContent += ' <td colspan="2"> ' + total + '</td>';
+        htmlContent += ' <td colspan="2" class="text-center font-weight-bold"> Tổng tiền: ' + all + ' VND</td>';
         $('#list-cart').html(htmlContent);
     } else {
         alert('Chưa thêm gói tập nào!');
     }
-    // $('#list-submit').click(function () {
-    //     var listLikedString = localStorage.getItem('listLiked');
-    //     if (listLikedString != null) {
-    //         var listLiked = JSON.parse(listLikedString);
-    //         $.ajax({
-    //             url: '/wish/complete',
-    //             data: listLiked,
-    //             method: 'POST',
-    //             success: function (data, textStatus, jqXHR) {
-    //                 alert(data);
-    //             },
-    //             error: function (jqXHR, textStatus, errorThrown) {
-    //                 alert(textStatus);
-    //             }
-    //         });
-    //     }
-    // });
+    $('#btn-pay').click(function () {
+        var listAddedString = localStorage.getItem('listAdded');
+        if (listAddedString != null) {
+            var listAdded = JSON.parse(listAddedString);
+            $.ajax({
+                url: '/cart/complete',
+                data: listAdded,
+                method: 'POST',
+                success: function (data, textStatus, jqXHR) {
+                    alert(data);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(textStatus);
+                }
+            });
+        }
+    });
+    $('#btn-pay').prev().click(function () {
+        location.reload();
+    });
 </script>
 </body>
 </html>

@@ -464,4 +464,25 @@ footer:after {
 .error {
     color: red;
 }
+.cart-table{
+    font-size: 130%;
+}
+.cart-add{
+    padding-right: 10px;
+    font-size: 130%;
+    color: black;
+}
 
+.cart-add:hover{
+    color:  #dc3545;
+}
+
+.cart-minus{
+    padding-left: 10px;
+    font-size: 130%;
+    color: black;
+}
+
+.cart-minus:hover{
+    color:  #dc3545;
+}

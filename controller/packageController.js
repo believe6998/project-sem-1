@@ -1,5 +1,7 @@
 var cloudinary = require('cloudinary').v2;
 var Package = require("../models/package.js");
+var Order = require("../models/order.js");
+var OrderDetail = require("../models/order-detail.js");
 var mongoose = require('mongoose');
 var myid = mongoose.Types.ObjectId;
 exports.generatePackageForm = function (req, res) {
@@ -120,6 +122,63 @@ exports.generateCart = function (req, res) {
     });
 };
 
+exports.complete = function (req, res) {
+    console.log("Complete order." + JSON.stringify(req.body));
+    var order = new Order({
+        id: 'ORDER_' + new Date().getTime() + makeid(),
+        customerName: 'Phan Hoài Nam',
+        customerPhone: '01213245698',
+        totalPrice: 0,
+        createdAt: new Date()
+    });
+    var totalPrice = 0;
+    for (var key in req.body) {
+        var orderDetail = new OrderDetail({
+            orderId: order.id,
+            packageId: key,
+            count: req.body[key].count
+        });
+        // tìm sản phẩm theo id ở đây.
+        totalPrice += parseInt(req.body[key].count*req.body[key].price);
+        // check cả số lượng.
+        console.log(key);
+        console.log(orderDetail.count);
+        orderDetail.save();
+    }
+    order.totalPrice = totalPrice;
+    order.save();
+    res.send(JSON.stringify(req.body));
+}
+
+
+
+function makeid() {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+exports.listOrder = function (req, res) {
+    Order.find({}, function (err, list) {
+        res.render("admin/table/order.ejs", {
+            "listOrder": list
+        });
+    });
+
+};
+
+exports.listOrderDetail = function (req, res) {
+    OrderDetail.find({}, function (err, list) {
+        res.render("admin/table/order-detail.ejs", {
+            "listOrderDetail": list
+        });
+    });
+
+};
 
 
 
