@@ -8844,7 +8844,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     text-align: center !important
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
     .text-sm-left {
         text-align: left !important
     }
