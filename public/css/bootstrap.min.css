@@ -6211,7 +6211,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
     display: inline-flex !important
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
     .d-sm-none {
         display: none !important
     }
