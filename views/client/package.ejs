@@ -49,13 +49,15 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/membership">QUYỀN LỢI HỘI VIÊN</a>
                             <a class="dropdown-item" href="/gallery">CÂU CHUYÊN THÀNH CÔNG</a>
+                            <a class="dropdown-item" href="/about-us">VỀ CHÚNG TÔI</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="/coach">HUẤN LUYỆN VIÊN</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active-page" href="/package" id="navbarDropdown2" role="button"
+                        <a class="nav-link dropdown-toggle active-page" href="/package" id="navbarDropdown2"
+                           role="button"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
                             GÓI TẬP
@@ -72,7 +74,11 @@
                         <a class="nav-link " href="/news/1">TIN TỨC</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/about-us">VỀ CHÚNG TÔI</a>
+                        <a class="nav-link " href="/cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="d-inline list-added text-dark" id="added-quantity">1</div>
+                            GIỎ HÀNG
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -144,11 +150,6 @@
     </div>
 </div>
 <div class="page-content ">
-    <section>
-        <img width="100%"
-             src=""
-             alt="">
-    </section>
     <section class=" register-now">
         <div class="row">
             <div class="col-8 ">
@@ -281,49 +282,7 @@
 </footer>
 <script src="/library/jquery-3.3.1.min.js"></script>
 <script src="/library/bootstrap.min.js"></script>
-<script>
-    function makeid() {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-        for (var i = 0; i < 5; i++)
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-        return text;
-    };
-    $('.btn-add').click(function () {
-        var id = $(this).parent().parent().find('.package-id').text();
-        var thumbnail = $(this).parent().parent().find('.package-img img').attr("src");
-        var price = $(this).parent().parent().find('.package-price').text();
-        var name = $(this).parent().parent().find('.package-name').text();
-        var package = {
-            'id': id,
-            'thumbnail': thumbnail,
-            'price': price,
-            'name': name,
-            'count': 1
-        }
-        var listAdded = {};
-        if (localStorage.getItem('listAdded') != null) {
-            var listAddedString = localStorage.getItem('listAdded');
-            listAdded = JSON.parse(listAddedString);
-            var currentAdd = listAdded[id];
-            if (currentAdd != null) {
-                package.count += currentAdd.count;
-            }
-        }
-        if (package.count > 0) {
-            // đưa message vào lại trong map
-            listAdded[package.id] = package;
-        } else {
-            delete listAdded[package.id];
-        }
-
-        // đưa map vào local storage.
-        localStorage.setItem('listAdded', JSON.stringify(listAdded));
-        alert("Đã thêm vào giỏ hàng!");
-    });
-
-</script>
+<script src="/js/package.js"></script>
+<script src="/js/quantity-added.js"></script>
 </body>
 </html>
