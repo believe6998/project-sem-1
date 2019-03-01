@@ -3,26 +3,22 @@
 }
 
 .navbar {
-    font-size: 18px;
+    /*font-size: 18px;*/
     font-family: 'Roboto', sans-serif;
     border-bottom: rgba(115, 115, 115, 0.9);
+    font-weight: bold;
 }
 
 .logo {
-    width: 9%;
-    margin-left: 66px;
+    width: 12%;
 }
 
 .logo img {
     width: 100%;
 }
 
-.my-nav {
-    margin-left: 40px;
-}
-
 .nav-item {
-    margin-left: 15px;
+    margin-left: 4px;
 }
 
 .dropdown-menu {
@@ -38,13 +34,8 @@
     color: white;
 }
 
-.btn-try {
-    margin-left: 50px;
-}
-
 .nav-link {
-    color: black;
-
+    color: #2f3438;
 }
 
 .nav-link:hover {
