@@ -6,6 +6,7 @@
     /*font-size: 18px;*/
     font-family: 'Roboto', sans-serif;
     border-bottom: rgba(115, 115, 115, 0.9);
+    font-weight: bold;
 }
 
 .logo {
@@ -34,7 +35,7 @@
 }
 
 .nav-link {
-    color: black;
+    color: #2f3438;
 }
 
 .nav-link:hover {
