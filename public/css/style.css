@@ -486,3 +486,11 @@ footer:after {
 .cart-minus:hover{
     color:  #dc3545;
 }
+
+.del-cart {
+    color:  black;
+}
+
+.del-cart:hover {
+    color:  #dc3545;
+}

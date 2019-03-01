@@ -298,7 +298,7 @@
         var thumbnail = $(this).parent().parent().find('.package-img img').attr("src");
         var price = $(this).parent().parent().find('.package-price').text();
         var name = $(this).parent().parent().find('.package-name').text();
-        var add = {
+        var package = {
             'id': id,
             'thumbnail': thumbnail,
             'price': price,
@@ -311,20 +311,21 @@
             listAdded = JSON.parse(listAddedString);
             var currentAdd = listAdded[id];
             if (currentAdd != null) {
-                add.count += currentAdd.count;
+                package.count += currentAdd.count;
             }
         }
-        if (add.count > 0) {
+        if (package.count > 0) {
             // đưa message vào lại trong map
-            listAdded[add.id] = add;
+            listAdded[package.id] = package;
         } else {
-            delete listAdded[add.id];
+            delete listAdded[package.id];
         }
 
         // đưa map vào local storage.
         localStorage.setItem('listAdded', JSON.stringify(listAdded));
         alert("Đã thêm vào giỏ hàng!");
     });
+
 </script>
 </body>
 </html>
