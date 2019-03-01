@@ -10,11 +10,12 @@
 
 .logo {
     width: 9%;
-    margin-left: 66px;
+    margin-left: 45px;
 }
 
 .logo img {
-    width: 100%;
+    width: 150px;
+    padding-right: 20px;
 }
 
 .my-nav {
