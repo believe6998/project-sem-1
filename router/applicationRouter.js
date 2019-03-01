@@ -11,6 +11,7 @@ var newsController = require("../controller/newsController.js");
 var aboutUsController = require("../controller/aboutUsController.js");
 var userController = require("../controller/userController.js");
 var adminController = require("../controller/adminController.js");
+var packageController = require("../controller/packageController.js");
 
 
 exports.routing = function (app) {
@@ -26,6 +27,13 @@ exports.routing = function (app) {
     app.get("/coach", coachController.generateCoach);
     app.get("/news/:page", newsController.generateNews);
     app.get("/about-us", aboutUsController.generateAboutus);
+    app.get("/package", packageController.generatePackage);
+    app.get("/package/yoga", packageController.generatePackageYoga);
+    app.get("/package/swim", packageController.generatePackageSwim);
+    app.get("/package/fitness", packageController.generatePackageFitness);
+    app.get("/package/group-ex", packageController.generatePackageGroup);
+    app.get("/package/kick-fit", packageController.generatePackageKickfit);
+    app.get("/cart", packageController.generateCart);
 
     //admin
     app.get("/admin", adminController.generateAdmin);
@@ -61,5 +69,14 @@ exports.routing = function (app) {
     app.get("/admin/coach/:id/delete", coachController.deleteCoach);
     app.post("/admin/coach/:id/update", coachController.updateCoach);
 
+    //package
+    app.get("/admin/package/list", packageController.listPackage);
+    app.get("/admin/package/form", packageController.generatePackageForm);
+    app.post("/admin/package/save", packageController.savePackage);
+    app.get("/admin/package/:id/delete", packageController.deletePackage);
+    app.post("/admin/package/:id/update", packageController.updatePackage);
+    app.post("/cart/complete", packageController.complete);
+    app.get("/admin/order/list", packageController.listOrder);
+    app.get("/admin/order-detail/list", packageController.listOrderDetail);
 
 }

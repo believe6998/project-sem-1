@@ -25,12 +25,12 @@
     margin-left: 15px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #f8f9fa;
 }
 
 .dropdown-item:active {
-    background-color: #dc3545 ;
+    background-color: #dc3545;
 }
 
 .dropdown-item:hover {
@@ -47,7 +47,7 @@
 
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #dc3545;
 }
 
@@ -83,6 +83,10 @@
 
 }
 
+.page-content h4 {
+    font-size: 300%;
+}
+
 .register-now {
     padding-top: 36px;
     padding-bottom: 46px;
@@ -115,18 +119,19 @@
 
 }
 
-.pt-introduce-1{
+.pt-introduce-1 {
     padding-right: 90px;
     padding-top: 70px;
 }
 
-.pt-introduce-2{
+.pt-introduce-2 {
     background-color: #eee;
     padding-top: 70px;
     padding-left: 50px;
 
 
 }
+
 .introduce-2-img img {
     width: 90%;
     padding-bottom: 30px;
@@ -152,11 +157,11 @@
 }
 
 
-.pt-1-img img{
+.pt-1-img img {
 
 }
 
-.pt-2-img img{
+.pt-2-img img {
     margin-left: 150px;
     padding-top: 10px;
 }
@@ -291,79 +296,84 @@ footer:after {
     color: red;
 }
 
-.modal-content{
+.modal-content {
     background: url("https://stmed.net/sites/default/files/dark-grey-wallpapers-25192-2374233.jpg");
 }
 
-.register-logo img{
+.register-logo img {
     padding-top: -20px;
 }
 
 #btn-submit {
     margin-left: 120px;
 }
-.member-slogan{
+
+.member-slogan {
     font-size: 30px;
     font-family: 'Roboto Slab', sans-serif;
 }
 
-.member-index{
+.member-index {
     font-size: 50px;
     color: #dc3545;
 
 }
 
-.member-img{
-   margin-left: 150px;
+.member-img {
+    margin-left: 150px;
 }
 
-.member-btn{
+.member-btn {
     padding-bottom: 35px;
 }
 
-.member-benefit{
+.member-benefit {
     font-size: 20px;
 }
-.gallery-quote{
+
+.gallery-quote {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-.gallery-item img{
+.gallery-item img {
     margin-top: 20px;
     width: 100%;
 }
 
-.gallery-item{
+.gallery-item {
     padding-bottom: 20px;
     border-radius: 20px;
     margin: 30px;
     background-color: white;
 }
 
-.list-gallery{
+.list-gallery {
     padding-left: 150px;
     padding-bottom: 40px;
 }
 
-.new-img{
+.new-img {
     width: 100%;
     height: 80%;
 }
-.new-img img{
+
+.new-img img {
     width: 100%;
     height: 100%;
 
 
 }
-.new-item{
+
+.new-item {
     margin-bottom: 20px;
 }
-.list-new{
+
+.list-new {
     padding-bottom: 40px;
     padding-top: 40px;
 }
 
-.new-item a{
+.new-item a {
     text-decoration: none;
 
 }
@@ -372,10 +382,115 @@ footer:after {
     color: #dc3545;
 }
 
-.active-bg{
+.active-bg {
     background-color: #dc3545;
     color: white;
 }
+
+.package-img {
+    width: 100%;
+    height: 200px;
+}
+
+.package-img img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.package-item {
+    background: white;
+    padding: 5%;
+    margin-bottom: 7%;
+
+}
+
+.list-package {
+    margin-left: 6%;
+    border-top: 2px #dc3545 solid;
+}
+
+
+.package-item a {
+    text-decoration: none;
+}
+
+.package-item button:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.package-price {
+    color: #dc3545;
+    font-size: 200%;
+    margin: 1%;
+}
+
+.package-name {
+    font-size: 130%;
+}
+
+.category {
+}
+
+.list-category {
+    padding-left: 14%;
+    margin-right: 15%;
+}
+
+.list-category a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-category a:hover {
+    color: #dc3545;
+}
+
+.category-item-list {
+    border-top: 2px #dc3545 solid;
+}
+
+.category-item  {
+    border-bottom: 1px #dc3545 dashed;
+    padding-bottom: 6%;
+    font-weight: bolder;
+}
+.category-item a{
+    color: #333;
+}
+
 .error {
     color: red;
+}
+.cart-table{
+    font-size: 130%;
+}
+.cart-add{
+    padding-right: 10px;
+    font-size: 130%;
+    color: black;
+}
+
+.cart-add:hover{
+    color:  #dc3545;
+}
+
+.cart-minus{
+    padding-left: 10px;
+    font-size: 130%;
+    color: black;
+}
+
+.cart-minus:hover{
+    color:  #dc3545;
+}
+
+.del-cart {
+    color:  black;
+}
+
+.del-cart:hover {
+    color:  #dc3545;
 }

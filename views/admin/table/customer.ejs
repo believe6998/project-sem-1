@@ -4,7 +4,8 @@
 
     <!-- start: Meta -->
     <meta charset="utf-8">
-    <title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+    <title>QUẢN LÍ NGƯỜI ĐÃ ĐĂNG KÍ</title>
+    <link rel="icon" href="/public/favicon.png">
     <meta name="description" content="Bootstrap Metro Dashboard">
     <meta name="author" content="Dennis Ji">
     <meta name="keyword"
@@ -90,6 +91,10 @@
                                             class="hidden-tablet"> Coachs</span></a></li>
                             <li><a class="submenu" href="/admin/gallery/list"><i class="icon-file-alt"></i><span
                                             class="hidden-tablet"> Gallery</span></a></li>
+                            <li><a class="submenu" href="/admin/order/list"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet"> Order</span></a></li>
+                            <li><a class="submenu" href="/admin/order-detail/list"><i class="icon-file-alt"></i><span
+                                            class="hidden-tablet"> Order Detail</span></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -118,7 +123,7 @@
                         </div>
                     </div>
                     <div class="box-content">
-                        <table class="table table-hover table-bordered ">
+                        <table class="table table-hover table-bordered">
                             <thead>
                             <tr>
                                 <th>Name</th>
@@ -172,14 +177,16 @@
                                             <input type="text" value=" <%= listRegister[i].address %>" name="address">
                                         </td>
                                         <td>
-                                            <select class="form-control" name="service">
-                                                <option value="Chưa chọn dịch vụ nào">Nhập dịch vụ ban muốn tư vấn</option>
-                                                <option value="Fitness">Fitness</option>
-                                                <option value="Thể dục nhóm">Thể dục nhóm</option>
-                                                <option value="Bơi lội">Bơi lội</option>
-                                                <option value="Yoga">Yoga</option>
-                                                <option value="Kitfit & MMA">Kitfit & MMA</option>
-                                            </select>
+                                            <label>
+                                                <select class="form-control" name="service">
+                                                    <option value="Chưa chọn dịch vụ nào">Nhập dịch vụ ban muốn tư vấn</option>
+                                                    <option value="Fitness">Fitness</option>
+                                                    <option value="Thể dục nhóm">Thể dục nhóm</option>
+                                                    <option value="Bơi lội">Bơi lội</option>
+                                                    <option value="Yoga">Yoga</option>
+                                                    <option value="Kitfit & MMA">Kitfit & MMA</option>
+                                                </select>
+                                            </label>
                                         </td>
                                         <td class="center">
                                             <button class="btn btn-success" type="submit">
