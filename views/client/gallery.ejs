@@ -174,15 +174,15 @@
         <div class="container-fluid">
             <h3 class="text-center text-danger pt-5 gallery-quote">"Tập càng đau, càng ra nhiều mồ hôi, càng thích"</h3>
             <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <iframe class="pt-5 pl-5" width="600" height="315" src="https://www.youtube.com/embed/L9GpdhoOnjM"
+                <div class="col-lg-6 col-sm-12 text-sm-center">
+                    <iframe class="pt-lg-5 pl-lg-5 video-lg" src="https://www.youtube.com/embed/L9GpdhoOnjM"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                 </div>
-                <div class="col-lg-6 text-sm-center">
-                    <div class="pt-5 gallery-quote pr-5">
-                        <h3>HUỲNH LÊ HOA MAI</h3>
+                <div class="col-lg-6 padding-sm-3">
+                    <div class="pt-lg-5 gallery-quote pr-lg-5">
+                        <h3 class="text-sm-center">HUỲNH LÊ HOA MAI</h3>
                         <div>
                             Bí quyết giảm ngoạn mục 9kg trong vòng 1 tháng rưỡi để vượt mặt nhiều đối thủ có tiếng trong
                             làng thể hình giành giải 5 trong đêm chung kết Musclecontest VietNam 2018.
@@ -192,15 +192,15 @@
             </div>
         </div>
     </section>
-    <section class="bg-light mt-5">
-        <h4 class="text-center text-danger pt-4 ">Xem thêm câu chuyện của những hội viên</h4>
+    <section class="bg-light mt-lg-5">
+        <h4 class="text-center text-danger pt-lg-4">Xem thêm câu chuyện của những hội viên</h4>
         <div class="list-gallery">
             <div class="row">
                 <% for (var i = 0; i < listGallery.length; i++) { %>
-                    <div class="col-lg-3 col-sm-9 gallery-item">
+                    <div class="col-lg-3 col-sm-2 gallery-item">
                         <img src="<%= listGallery[i].thumbnail %>"
                              alt="">
-                        <h3 class="m-2 mt-lg-3 mt-sm-12 text-center"><%= listGallery[i].name %>
+                        <h3 class="m-2 mt-lg-3 mt-sm-3 text-center"><%= listGallery[i].name %>
                         </h3>
                         <div class="m-2 text-center"><%= listGallery[i].content %>
                         </div>
