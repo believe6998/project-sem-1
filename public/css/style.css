@@ -492,3 +492,9 @@ footer:after {
     border-radius: 50px;
 
 }
+
+.pay{
+    border: black solid 1px;
+    padding: 10px;
+    background: #6c757d;
+}
