@@ -493,8 +493,19 @@ footer:after {
 
 }
 
-.pay{
-    border: black solid 1px;
+.pay {
+    border: black solid 0;
     padding: 10px;
     background: #6c757d;
+}
+
+.cart-action{
+    border: white solid 3px;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+.cart-action a{
+    text-decoration: none;
+    color: #f8f9fa;
 }
