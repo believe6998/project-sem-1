@@ -334,10 +334,6 @@ footer:after {
     background-color: white;
 }
 
-.list-gallery {
-    padding-left: 150px;
-    padding-bottom: 40px;
-}
 
 .new-img {
     width: 100%;
@@ -485,7 +481,7 @@ footer:after {
     color: #dc3545;
 }
 
-.list-added{
+.list-added {
     border: 1px solid #ffc107;
     padding: 1px;
     background: #ffc107;
@@ -493,6 +489,48 @@ footer:after {
 
 }
 
+@media (min-width: 1280px) {
+    .margin-lg {
+        margin: 10px;
+    }
+
+    .col-md-6-5 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 48.5%;
+    }
+    .padding-lg-1{
+        padding: 10px;
+        padding-right: 200px;
+        padding-top: 100px;
+    }
+    .padding-lg-2{
+        padding: 10px;
+        padding-left: 200px;
+    }
+    .video-lg{
+        width: 600px;
+        height: 315px;
+    }
+    .list-gallery {
+        padding-left: 150px;
+        padding-bottom: 40px;
+    }
+}
+@media (min-width: 320px) {
+    .padding-sm-1{
+        padding-top: 20px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .padding-sm-2{
+        padding-top: 50px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+    .padding-sm-3{
+        padding: 30px;
+    }
 .pay {
     border: black solid 0;
     padding: 10px;
@@ -507,5 +545,5 @@ footer:after {
 
 .cart-action a{
     text-decoration: none;
-    color: #f8f9fa;
+    color: #f8f9fa
 }
