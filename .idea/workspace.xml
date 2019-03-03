@@ -3,24 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf1ea0b-4bd4-4d90-a047-a240321c7d10" name="Default Changelist" comment="fix lỗi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/packageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/packageController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-coach.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-coach.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-gallery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-gallery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-news.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/form/form-package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/form/form-package.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/coach.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/coach.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/customer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/customer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/gallery.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/gallery.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/news.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/news.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/order-detail.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/order-detail.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/admin/table/order.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/admin/table/order.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/cart.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/cart.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/client/package.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/client/package.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/client/cart.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="246" column="57" lean-forward="true" selection-start-line="246" selection-start-column="57" selection-end-line="246" selection-end-column="57" />
+            <state relative-caret-position="2410">
+              <caret line="382" column="57" lean-forward="true" selection-start-line="382" selection-start-column="57" selection-end-line="382" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -51,15 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/cart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="176" column="15" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="15" />
+              <caret line="181" column="47" lean-forward="true" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="539" column="21" lean-forward="true" selection-start-line="539" selection-start-column="21" selection-end-line="539" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -77,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/views/client/checkout.ejs" />
         <option value="$PROJECT_DIR$/router/applicationRouter.js" />
         <option value="$PROJECT_DIR$/views/client/package.ejs" />
@@ -97,6 +88,7 @@
         <option value="$PROJECT_DIR$/public/js/validate.js" />
         <option value="$PROJECT_DIR$/views/client/cart.ejs" />
         <option value="$PROJECT_DIR$/public/js/cart.js" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -138,12 +130,6 @@
               <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-sem-1" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-sem-1" type="b2602c69:ProjectViewProjectNode" />
@@ -240,7 +226,7 @@
       <workItem from="1551533190341" duration="5692000" />
       <workItem from="1551539450378" duration="11955000" />
       <workItem from="1551555215962" duration="110000" />
-      <workItem from="1551591389798" duration="19062000" />
+      <workItem from="1551591389798" duration="21365000" />
     </task>
     <task id="LOCAL-00001" summary="thêm link cho footer">
       <created>1549878988543</created>
@@ -301,13 +287,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114547000" />
+    <option name="totallyTimeSpent" value="116850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13593256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13593256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -320,7 +305,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.1419285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49947312" visible="true" weight="0.1419285" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.4225352" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -444,13 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="449" column="21" selection-start-line="449" selection-start-column="21" selection-end-line="449" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -606,19 +584,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/client/cart.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="246" column="57" lean-forward="true" selection-start-line="246" selection-start-column="57" selection-end-line="246" selection-end-column="57" />
+        <state relative-caret-position="2410">
+          <caret line="382" column="57" lean-forward="true" selection-start-line="382" selection-start-column="57" selection-end-line="382" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/cart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="176" column="15" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="15" />
+          <caret line="181" column="47" lean-forward="true" selection-start-line="181" selection-start-column="47" selection-end-line="181" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="539" column="21" lean-forward="true" selection-start-line="539" selection-start-column="21" selection-end-line="539" selection-end-column="21" />
         </state>
       </provider>
     </entry>

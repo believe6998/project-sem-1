@@ -529,16 +529,18 @@ footer:after {
     font-size:36px;
     margin-left:50px;
 }
-@media(max-width:768px){
-    .show-menu-btn{
+@media(max-width:991px) {
+    .show-menu-btn {
         display: block;
         transform: translateX(50%);
-        color:#091D13;
+        color: #091D13;
     }
-    .logo{
+
+    .logo {
         width: 250px;
         transform: translateX(-20%);
     }
+}
 @media (min-width: 1280px) {
     .margin-lg {
         margin: 10px;
@@ -607,6 +609,7 @@ footer:after {
     text-decoration: none;
     color: #f8f9fa
 }
+
 #side-menu .dropdown-menu{
     background: black;
 }
