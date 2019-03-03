@@ -447,6 +447,7 @@ footer:after {
 
 .error {
     color: red;
+    font-weight: bold;
 }
 
 .cart-table {
@@ -499,51 +500,61 @@ footer:after {
         flex: 0 0 50%;
         max-width: 48.5%;
     }
-    .padding-lg-1{
+
+    .padding-lg-1 {
         padding: 10px;
         padding-right: 200px;
         padding-top: 100px;
     }
-    .padding-lg-2{
+
+    .padding-lg-2 {
         padding: 10px;
         padding-left: 200px;
     }
-    .video-lg{
+
+    .video-lg {
         width: 600px;
         height: 315px;
     }
+
     .list-gallery {
         padding-left: 150px;
         padding-bottom: 40px;
     }
 }
+
 @media (min-width: 320px) {
-    .padding-sm-1{
+    .padding-sm-1 {
         padding-top: 20px;
         padding-left: 75px;
         padding-right: 75px;
     }
-    .padding-sm-2{
+
+    .padding-sm-2 {
         padding-top: 50px;
         padding-left: 75px;
         padding-right: 75px;
     }
-    .padding-sm-3{
+
+    .padding-sm-3 {
         padding: 30px;
     }
+
+}
+
 .pay {
-    border: black solid 0;
+    border: white solid 3px;
     padding: 10px;
     background: #6c757d;
 }
 
-.cart-action{
+.cart-action {
     border: white solid 3px;
     padding: 10px;
     margin-bottom: 1px;
 }
 
-.cart-action a{
+.cart-action a {
     text-decoration: none;
     color: #f8f9fa
 }

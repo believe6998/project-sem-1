@@ -5,7 +5,7 @@ var OrderSchema = new Schema({
     // id: {type: String},
     customerName: {type: String},
     customerPhone: {type: String},
-    totalPrice: {type: Number},
+    totalPrice: {type: String},
     createdAt: [Date]
 });
 

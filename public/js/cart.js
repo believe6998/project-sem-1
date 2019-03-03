@@ -39,7 +39,7 @@ if (localStorage.getItem('listAdded') != null) {
         } else if (total.length == 9) {
             total = total.splice(3, 0, ",");
             total = total.splice(7, 0, ",");
-        } else {
+        } else if (total.length > 9) {
             alert("Đơn hàng của bạn quá lớn, hãy liên hệ với chúng tôi");
         }
         htmlContent += '   <td class="text-center ">' + total + ' VND</td>';
@@ -66,7 +66,7 @@ if (localStorage.getItem('listAdded') != null) {
     } else if (formatAll.length == 9) {
         formatAll = formatAll.splice(3, 0, ",");
         formatAll = formatAll.splice(7, 0, ",");
-    } else {
+    } else if (formatAll.length > 9) {
         alert("Đơn hàng của bạn quá lớn, hãy liên hệ với chúng tôi");
     }
     htmlContent += '<td colspan="3">Mã giảm giá/ Quà tặng:</td>';
@@ -75,23 +75,7 @@ if (localStorage.getItem('listAdded') != null) {
 } else {
     alert('Chưa thêm gói tập nào!');
 }
-$('#btn-pay').click(function () {
-    var listAddedString = localStorage.getItem('listAdded');
-    if (listAddedString != null) {
-        var listAdded = JSON.parse(listAddedString);
-        $.ajax({
-            url: '/cart/complete',
-            data: listAdded,
-            method: 'POST',
-            success: function (data, textStatus, jqXHR) {
-                alert(data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                alert(textStatus);
-            }
-        });
-    }
-});
+
 
 // $('#btn-pay').prev().click(function () {
 //     location.reload();
@@ -167,4 +151,42 @@ $('.del-cart').click(function () {
     }
 
     localStorage.setItem('listAdded', JSON.stringify(listAdded));
+});
+
+
+$('#btn-pay').click(function () {
+    var listAddedString = localStorage.getItem('listAdded');
+    if (listAddedString != null) {
+        var listAdded = JSON.parse(listAddedString);
+        var customerName = $('#pay-name').val();
+        var customerPhone = $('#pay-phone').val();
+        listAdded['totalPrice'] = formatAll;
+        listAdded['customerName'] = customerName;
+        listAdded['customerPhone'] = customerPhone;
+        if (customerName.length > 2 && customerPhone.length > 9 && customerPhone.length <= 10) {
+            $.ajax({
+                url: '/cart/complete',
+                data: listAdded,
+                method: 'POST',
+                success: function (data, textStatus, jqXHR) {
+                    alert(data);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(textStatus);
+                }
+            });
+        } else if (customerName.length == 0 && customerPhone.length == 0) {
+            alert('Bạn chưa nhập tên và số điện thoại')
+        } else if (customerName.length == 0) {
+            alert('Bạn chưa nhập tên');
+        } else if (customerPhone.length == 0) {
+            alert('Bạn chưa nhập số điện thoại')
+        }else if (customerName.length < 3)
+        {
+            alert('Tên bạn quá ngắn. Vui lòng nhập lại')
+        }else if (customerPhone.length != 10 && customerPhone.length != 11)
+        {
+            alert('Số điện thoại của bạn không hợp lệ. Vui lòng nhập lại')
+        }
+    }
 });
