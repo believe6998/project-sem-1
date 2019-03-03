@@ -163,13 +163,15 @@ $('#btn-pay').click(function () {
         listAdded['totalPrice'] = formatAll;
         listAdded['customerName'] = customerName;
         listAdded['customerPhone'] = customerPhone;
-        if (customerName.length > 2 && customerPhone.length > 9 && customerPhone.length <= 10) {
+        if (customerName.length > 2 && customerPhone.length > 9 && customerPhone.length <= 11) {
             $.ajax({
                 url: '/cart/complete',
                 data: listAdded,
                 method: 'POST',
                 success: function (data, textStatus, jqXHR) {
-                    alert(data);
+                    alert("Gửi đơn hàng thành công")
+                    console.log(data);
+                    localStorage.clear();
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     alert(textStatus);

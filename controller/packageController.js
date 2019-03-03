@@ -131,7 +131,6 @@ exports.complete = function (req, res) {
         totalPrice: req.body.totalPrice,
         createdAt: new Date()
     });
-    var totalPrice = 0;
     for (var key in req.body) {
         var orderDetail = new OrderDetail({
             orderId: order.id,
@@ -174,6 +173,5 @@ exports.listOrderDetail = function (req, res) {
     });
 
 };
-
 
 

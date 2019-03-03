@@ -529,7 +529,7 @@ footer:after {
     font-size:36px;
     margin-left:50px;
 }
-@media(max-width:991px) {
+@media(max-width:768px) {
     .show-menu-btn {
         display: block;
         transform: translateX(50%);
