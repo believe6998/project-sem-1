@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 var packageSchema = new Schema({
     thumbnail: {type: String},
-    price: {type: Number},
+    price: {type: String},
     name: {type: String},
     category:  {type: String}
 });
