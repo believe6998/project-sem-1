@@ -43,7 +43,7 @@ exports.listPackage = function (req, res) {
 
 };
 exports.generatePackage = function (req, res) {
-    Package.find({}, function (err, list) {
+    Package.find({'category': new RegExp('^' + 'Fitness' + '$', "i")}, function (err, list) {
         res.render("client/package.ejs", {
             "listPackage": list
         });
@@ -126,9 +126,9 @@ exports.complete = function (req, res) {
     console.log("Complete order." + JSON.stringify(req.body));
     var order = new Order({
         id: 'ORDER_' + new Date().getTime() + makeid(),
-        customerName: 'Phan Hoài Nam',
-        customerPhone: '01213245698',
-        totalPrice: 0,
+        customerName: req.body.customerName,
+        customerPhone: req.body.customerPhone,
+        totalPrice: req.body.totalPrice,
         createdAt: new Date()
     });
     var totalPrice = 0;
@@ -138,18 +138,13 @@ exports.complete = function (req, res) {
             packageId: key,
             count: req.body[key].count
         });
-        // tìm sản phẩm theo id ở đây.
-        totalPrice += parseInt(req.body[key].count*req.body[key].price);
-        // check cả số lượng.
         console.log(key);
         console.log(orderDetail.count);
         orderDetail.save();
     }
-    order.totalPrice = totalPrice;
     order.save();
     res.send(JSON.stringify(req.body));
 }
-
 
 
 function makeid() {
